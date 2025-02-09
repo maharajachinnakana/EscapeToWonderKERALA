@@ -1,0 +1,138 @@
+*{
+  box-sizing:border-box;
+}
+html,body{
+ /* background-image:url("/MUNNAR/1727178567582.jpg");
+  background-size:cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;*/
+  width:100vw;
+  margin:0;
+  padding:0;
+  overflow-x:;
+  background-color:white;
+}
+nav{
+  position:sticky;
+  z-index:1;
+  background-color:;
+  display:flex;
+  flex-direction:row;
+  justify-content:center;
+  margin-top:5px;
+  .kolukkumalai{
+    background-color:black;
+    width:98vw;
+    height:75px;
+    border-radius:8px;
+    h1{
+      color:silver;
+      text-align:center;
+      margin-top:-50px;
+      margin-left:30px;
+      font-weight:900;
+      font-size:25px;
+      overflow-x:hidden;
+    }
+    .logo{
+      z-index:1;
+      height:70px;
+      width:70px;
+      margin-left:5px;
+    }
+    .icon{
+      margin-left:88%;
+      margin-top:-60px;
+    }
+  .round{
+    width:40px;
+    height:40px;
+    border-style:solid;
+    border-color: orange;
+    border-radius:8px;
+    border-width:3px;
+    background-color:black;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items: center;
+    gap:5px;
+    margin-left:0px;
+    text-shadow:0 0 5px white;
+  }
+  .line{
+    height:7px;
+    width:30px;
+    border-style:solid;
+    border-color:orange;
+    border-radius:8px;
+    background-color: orange;
+    box-shadow: 0 0 1px black;
+  }
+  .round:hover{
+    transform:scaleX(11px)
+  }
+}
+/* Menu items (hidden initially) */
+.menu-items {
+  display: flex;
+  flex-direction:column;
+  align-items:start;
+  position: absolute;
+  gap:10px;
+  opacity: 0; /* Initially hidden */
+  pointer-events: none; /* Prevent interaction when hidden */
+  transition: opacity 0.5s ease; /* Smooth fade-in */
+}
+
+/* Styling for the menu links */
+.menu-items a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+}
+
+/* Hover or focus-within state */
+.round:hover,
+.round:focus-within {
+  height:100px;
+  width:180px;
+  border-width:5px;
+  border-color: white;
+  background-color:lightgray;
+  margin-left:-300%;
+  .line{
+    visibility: hidden;
+  }
+  .home,.about{
+    display:flex;
+    flex-direction:row;
+    color:black;
+    font-weight:900;
+    align-items:center;
+    gap:10px;
+    font-size:30px;
+    
+  }
+  .homeicone,abouticone{
+    width:30px;
+    height:30px;
+    margin-top:-0px;
+    background-color: white;
+    border-radius:15px;
+    box-shadow:0 5px 5px black;
+  }
+}
+
+.round:hover .menu-items,
+.round:focus-within .menu-items {
+  display:flex;
+  flex-direction: column;
+  margin-left:-20px;
+  align-items:start;
+  opacity: 1; /* Show menu items */
+  pointer-events: auto;/* Allow interaction */
+  z-index: 1;
+}
+
