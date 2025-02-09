@@ -1,0 +1,794 @@
+
+ body{
+ /* background-image:url("/MUNNAR/1727178567582.jpg");
+  background-size:cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;*/
+  margin-left:-1px;
+  background-color:;
+}
+
+.bottom-nav{
+  position:sticky;
+  z-index:1;
+  width:100vw;
+  .end-{
+    position:relative;
+    display:flex;
+    flex-direction:row;
+    gap:10px;
+    bottom:-635px;
+    left:-5px;
+    width:97.5%;
+    height:50px;
+    background-color:rgba(192, 192, 192, 1);
+    border-radius:28px 28px 0 0;
+  }
+  .callnow,.booknow{
+    border-radius:28px;
+    color:white;
+    background-color:#00000085;
+    border-color:black;
+    border-style:solid;
+    border-width:3px;
+    font-size:20px;
+    height:30px;
+    text-decoration:none;
+    width:120px;
+    text-align:center;
+    line-height:32px;
+    font-weight:900;
+  }
+}
+nav{
+  position:sticky;
+  z-index:1;
+  background-color:;
+  display:flex;
+  justify-content:end;
+  top:10px;
+  left:px;
+    .round{
+      width:35px;
+      height:35px;
+      border-style:solid;
+      border-color:blac;
+      border-radius:8px;
+      border-width:3px;
+      background-color:transparent;
+      display:flex;
+      flex-direction:column;
+      justify-content:center;
+      align-items: center;
+      gap:2px;
+      margin-top:;
+      margin-left:337px;
+      text-shadow:0 0 5px white;
+      z-index:0;
+      box-shadow:0px 0px 4px black;
+    }
+  .line{
+    
+    height:7px;
+    width:30.9px;
+    border-style:solid;
+    border-width:1.5px;
+    border-color:black;
+    border-radius:8px;
+    background-color:black;
+    box-shadow:;
+  }
+  .round:hover{
+    transform:scaleX(11px)
+  }
+
+/* Menu items (hidden initially) */
+.menu-items {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  position: absolute;
+  left: 30px; /* Position next to the line */
+  opacity: 0; /* Initially hidden */
+  pointer-events: none; /* Prevent interaction when hidden */
+  transition: opacity 0.5s ease; /* Smooth fade-in */
+}
+
+/* Styling for the menu links */
+.menu-items a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+}
+
+/* Hover or focus-within state */
+.round:hover,
+.round:focus-within {
+  height:250px;
+  width:190px;
+  border-width:5px;
+  border-color: white;
+  border-radius:28px;
+  margin-left:15%;
+  background-color:lightgray;
+    .line{
+      visibility: hidden;
+  }
+ 
+  .navlis{
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+    color:black;
+    font-weight:900;
+    font-size:;
+    
+  }
+}
+.round:hover .line,
+.round:focus-within .line{
+  visibility:hidden;
+}
+.round:hover .menu-items,
+.round:focus-within .menu-items {
+  display:flex;
+  flex-direction:column;
+  margin-left:200px;
+  align-items:start;
+  opacity: 1; /* Show menu items */
+  pointer-events: auto;/* Allow interaction */
+}
+}
+.munnar {
+  margin-top:-75px;
+  background-color:; /* Optional */
+  width:100vw;
+  height: 100vh;
+  overflow: scroll;
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory; /* Snap horizontally */
+  display: flex;
+  flex-direction: row; /* Horizontal scrolling layout */
+  gap: 30px;
+}
+
+.photo{
+  position:relative;
+}
+.photos{
+  visibility: hidden;
+  overflow-x:scroll;
+  margin-top:-110px;
+  position: absolute;
+  padding-bottom:5px;
+  height:100px;
+  width:100px;
+  left: 30px; /* Position next to the line */
+  opacity:1; /* Initially hidden */
+  pointer-events: none; /* Prevent interaction when hidden */
+  transition: opacity 3s ease; /* Smooth fade-in */
+  transition: scale 5s ease;
+  background-color:gray;
+  img{
+    width:155px;
+    height:155px;
+    object-fit:cover;
+    overflow: scroll;
+  }
+ 
+}
+.photo:hover,
+.photo:focus-within {
+  border-width:5px;
+  border-color: white;
+}
+.photo:hover .photos,
+.photo:focus-within .photos{
+  background-color: white;
+  visibility: visible;
+  width:325px;
+  height:520px;
+  position:absolute;
+  row-gap:5px;
+  top:118px;
+  right:-20px;
+  z-index:1;
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  margin-left:20px;
+  opacity: 1; /* Show menu items */
+  pointer-events: auto; 
+  overflow:scroll;
+  }
+.photo:hover .image,
+.photo:focus-within .image,
+.photo:hover .headline,
+.photo:focus-within .headline,
+.photo:hover .box,
+.photo:focus-within .box,
+.photo:hover .box1,
+.photo:focus-within .box1,
+.photo:hover .box2,
+.photo:focus-within .box2{
+  filter: blur(1px);
+  }
+  
+ /*.photo:hover .one,
+ .photo:focus-within .one{
+   grid-row:span 4;
+ }
+ .photo:hover .two,
+ .photo:focus-within .two {
+   grid-row: span 3;
+ }
+ .photo:hover .three,
+ .photo:focus-within .three{
+   grid-column: span ;
+   grid-row: span 3;
+ }
+ .photo:hover .four,
+ .photo:focus-within .four{
+   grid-row: span 3;
+ }
+ .photo:hover .five,
+ .photo:focus-within .five {
+   grid-row: span 4;
+ }
+ .photo:hover .six,
+ .photo:focus-within .six {
+   grid-row: span 3;
+ }
+ .photo:hover .seven,
+ .photo:focus-within .seven {
+   grid-row: span 3 ;
+   grid-column:span 2;
+ }
+ .photo:hover .eight,
+ .photo:focus-within .eight {
+   grid-row: span 3;
+ }
+ .photo:hover .nine,
+ .photo:focus-within .nine{
+   grid-row: span ;
+ }
+ .photo:hover .ten,
+ .photo:focus-within .ten {
+   grid-row: span ;
+ }*/
+.Mattupatti-Direction,
+.Cochin-Direction,
+.Coimbatore-Direction,
+.Thekkady-direction {
+  scroll-snap-align: start; /* Snap at the start of each section */
+  flex: 0 0 100vw; /* Each section takes up full viewport width */
+  height: 100vh; /* Full viewport height */
+  width:100vw;
+}
+
+
+
+.row-track{
+  margin-top:5px;
+  position:relative;
+  top:-80px;
+  background-color:;
+  display:flex;
+  flex-direction:row;
+  justify-content:center;
+  gap:10px;
+  .circle{
+    width:20px;
+    height:20px;
+    border-style: solid;
+    border-radius:15px;
+    border-color:black;
+    background-color:gray;
+    transition: background-color 0.3s ease, transform 0.3s ease;   
+    }
+  }
+.circle.active {
+  background-color: orange;
+  transform: scale(1.2);
+  box-shadow: 0 0 15px rgba(0,0, 0, 0.8),
+              0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+
+.top-content{
+    .headding{
+      display:inline-flex;
+      justify-content:start;
+      height:40px;
+      width:100vw;
+  }
+    .thekkady-direction,.mattupatti-direction,.cochin-direction,.coimbatore-direction{
+      font-size:30px;
+      margin-left:65px;
+      margin-top:4px;
+      color:black;
+    }
+    .coimbatore-direction{
+      margin-left:65px;
+      font-size:29px;
+      }
+  
+}
+  
+.content{
+  display:flex;
+  flex-direction:row;
+}
+
+.gallery-container {
+    border-radius:8px;
+    width:100vw;
+    height:100vh;
+    background-color:white;
+    color: white;
+    /*overflow-y: auto;*/
+    overflow-x: hidden;
+    background-repeat:no-repeat ;
+    /*scroll-snap-type:y;*/
+    gap:50px;
+    
+}
+@keyframes scroll{
+  from{
+    opacity:.0;
+    scale:0.3;
+  }
+  to{
+    scale:1;
+  }
+}
+
+.gallery-item:nth-child(2),
+.gallery-item:nth-child(3),
+.gallery-item:nth-child(4),
+.gallery-item:nth-child(5),
+.gallery-item:nth-child(6),
+.gallery-item:nth-child(7),
+.gallery-item:nth-child(8),
+.gallery-item:nth-child(9),
+.gallery-item:nth-child(10),
+.gallery-item:nth-child(11),
+.gallery-item:nth-child(12),
+.gallery-item:nth-child(13),
+.gallery-item:nth-child(14),
+.gallery-item:nth-child(15),
+.gallery-item:nth-child(16),
+.gallery-item:nth-child(17){
+  animation: scroll linear alternate;
+  animation-timeline:view();
+  animation-range: entry 0 cover 30%;
+  /*transition: transform 0.5s ease-in-out;*/
+ }
+.gallery-item {
+  position:none;
+  scroll-snap-align:start;
+  max-width:99%;
+  max-height:100%;
+  margin-left:1%;
+  box-sizing: border-box;
+  overflow: hidden;
+  background-color:white;
+  color:black;
+  border-radius:8px;
+  display:flex;
+  flex-direction:column;
+  margin-bottom:10px;
+  padding-bottom:-50px;
+  .headline{
+    color:white;
+    position:relative;
+    bottom:52px;
+    left:10px;
+    font-size:30px;
+    text-shadow:5px 5px 5px black;
+  }
+  .empty{
+    height:100px;
+    visibility: hidden;
+  }
+
+
+    div{
+      background-color:;
+      background-color:rgba(192, 192, 192,1);
+      border-radius:25px;
+     
+      margin-right:5px;
+      position: relative;
+      top:-55px;
+      margin-bottom:20px;
+    }
+    p{
+      text-align:start;
+      margin-top:-20px;
+      margin-left:10px;
+      font-size:25px;
+      font-weight:900;
+    }
+    /*{
+      font-size:25px;
+      margin-left:10px;
+      margin-top:8px;
+      text-shadow:5px 5px 5px black;
+    }*/
+    h3{font-size:30px;
+      margin-left:10px;
+      margin-top:1px;
+      text-shadow:5px 5px 5px black;
+      color:lightyellow;
+    }
+
+ .box,.box1,.box2,.box3,.box4{
+   box-shadow:5px 5px 10px black;
+   .toggle-header{
+     cursor:pointer;
+   }
+   .toggle-content {
+     margin-top:55px;
+     cursor:pointer;
+     display:none;
+    
+   }
+   .hidden-keyword {
+    visibility:none;
+   }
+   h4 {
+      visibility:none;
+    }
+   
+   .toggle-header:hover.hidden-keyword,
+   .toggle-header:focus-within.hidden-keyword,.toggle-header:hover h4,
+   .toggle-header:focus-within h4,
+   .toggle-header:hover.toggle-content,
+   .toggle-header:focus-within .toggle-content{
+     visibility:visible;
+     display:inline;
+   }
+ }
+ .box1{
+   box-shadow:5px 5px  10px black;
+ }
+ .box2,.box3,.box4{
+   box-shadow:5px 5px 10px black;
+ }
+ .box1,.box,.box2{
+   padding-bottom:-30px ;
+ }
+ 
+}
+ .photos{
+   background-color:white;
+ }
+
+ 
+img{
+  position:relative;
+  opacity:1;
+  left:2px;
+  top:5px;
+  width:99%;
+  display: block;
+  border-radius:18px;
+  box-shadow:-5px 5px 10px black;
+
+}
+
+button{
+  font-size:40px;
+  margin-top:-40px;
+  margin-left:5px;
+  border-radius:8px;
+  text-align:center;
+  color:white;
+  width:98%;
+  height:50px;
+  background:black;
+  border: solid;
+  border-color:black;
+  outline: none;
+  cursor: pointer;
+  box-shadow:0 0 10px black;
+  
+}
+
+#footer{
+  background-color:white;
+  margin-top:10px;
+  height:5px;
+  hr{
+    width:100vw;
+    height:5px;
+    background-color:black;
+  }
+   .toggle-header{
+     cursor:pointer;
+   }
+   .toggle-content {
+     margin-top:10px;
+     cursor:pointer;
+     display:none;
+     height:auto;
+     font-size:15px;
+   }
+   .hidden-keyword {
+    visibility:none;
+   }
+   h4 {
+      visibility:none;
+    }
+   .toggle-header:hover+.toggle-content,
+   .toggle-header:focus+.toggle-content {
+     display: block;
+   }
+   .toggle-header:hover.hidden-keyword,
+   .toggle-header:focus-within.hidden-keyword,.toggle-header:hover h4,
+   .toggle-header:focus-within h4{
+     visibility: visible;
+   }  
+}
+.about-this-page{
+  text-align:center;
+  margin-left:5px;
+  h3{
+    font-size:35px;
+    font-weight:900;
+  }
+  h1{
+    font-size:20px;
+  }
+  p{
+    font-weight:none;
+  }
+}
+.bottom{
+  text-align: center;
+  font-size:20px;
+  color: black;
+  h3{
+    font-size:35px;
+    font-weight:900;
+  }
+  }
+  p{
+    font-size:25px;
+  }
+  .map{
+    margin-bottom:10px;
+    box-shadow:none;
+  }
+  #about{
+    color:;
+   
+}
+  #buttons{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    margin-top:10px;
+  }
+  .Box{
+    border-color:black;
+    border-style:solid;
+    border-width:3px;
+    border-radius:18px;
+    margin-left:6px;
+    .money {
+      width:25px;
+      height:25px;
+      box-shadow: none;
+      margin-top:-30px;
+      margin-left:330px;
+    }
+    .icon-box{
+      display:flex;
+      flex-direction:row;
+      gap:30px;
+      justify-content:center;
+      img{
+        box-shadow:none;
+        height:50px;
+        width:55px;
+        border-radius:0px;
+      }
+      .button {
+        gap: 30px;
+        justify-content: start;
+        align-items: center;
+        font-size: 20px;
+        width: 50vw;
+        margin-left: px;
+        margin-top: 1px;
+        margin-bottom: 10px;
+        background-color:black;
+        color:white;
+        text-shadow: none;
+        box-shadow: 5px 5px 5px orange;
+      }
+    }
+
+  }
+  #or{
+    margin-top:-1%;
+    padding-left:10px;
+    padding-right:10px;
+  }
+
+  
+  .whatsapp{
+    box-shadow:5px 5px 5px black;
+    height:50%;
+    display:flex;
+    flex-direction:row;
+    align-items: center;
+    padding:6px 10px;
+    font-size:25px;
+    color: #fff;
+    background-color: #25D366;
+    border:solid;
+    border-radius: 5px;
+    text-align:center;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+        }
+
+  .whatsapp:hover {
+    background-color: #128C7E;
+        }
+  
+
+  .whatsapp i {
+     margin-right: 10px; 
+        }
+  
+  .call{
+    box-shadow: 5px 5px 5px black;
+    height:50%;
+    width:18%;
+    display:flex;
+    flex-direction:row;
+    justify-content: center;
+    align-items:center;
+    gap:10px;
+    padding:6px 10px;
+    font-size:25px;
+    color: #fff;
+    background-color: #25D366;
+    border:solid;
+    border-radius: 5px;
+    text-align:center;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  #calls{
+    box-shadow:none;
+    margin-top:-10px;
+    height:30px;
+    width:30px;
+    border:none;
+    background-color:none;
+  }
+    
+  #phno{
+    padding-top:px;
+    color:black;
+  }
+  #email{
+    display:inline-block;
+    padding-top:px;
+    color:black;
+  }
+
+.office{
+  text-align:center;
+  padding-top:50px;
+}
+
+#o{
+  text-align: center;
+  font-size: 40px;
+}
+
+#op{
+  font-size:25px;
+  color:black;
+}
+#v{
+  font-size:40px;
+  text-align: center;
+
+}
+#vp{
+  font-size:25px;
+  color:black;
+}
+.vehickles{
+  text-align:center;
+  padding-top:30px;
+}
+.img{
+  padding-top:20px;
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+  gap:20px;
+}
+#crysta{
+  height:200px;
+  width:380px;
+  border-radius:4px;
+  background-image:url('/vehicles/images (97).jpeg');
+  background-size:cover;
+  background-position: center;
+  background-repeat:no-repeat;
+  }
+#innova{
+  height:200px;
+  width:378px;
+  border-radius:4px;
+  background-image:url('/vehicles/images (98).jpeg');
+  background-size:cover;
+  background-position: center;
+  background-repeat:no-repeat;
+  
+}
+#ertiga {
+  height: 200px;
+  width: 378px;
+  border-radius:4px;
+  background-image: url('/vehicles/images (100).jpeg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+}
+#travaler{
+  height:250px;
+  width:380px;
+  border-radius:4px;
+  background-image:url('/vehicles/images trav.jpeg');
+  background-size:cover;
+  background-position: center;
+  background-repeat:no-repeat;
+  
+}
+#etios{
+  height: 200px;
+  width: 380px;
+  border-radius:4px;
+  background-image: url('/vehicles/images - 2024-08-23T200234.399.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+}
+#verito {
+  height: 200px;
+  width: 380px;
+  border-radius:4px;
+  background-image: url('/vehicles/images - 2024-08-23T200302.805.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+}
+#swift {
+  height: 200px;
+  width: 380px;
+  border-radius:4px;
+  background-image: url('/vehicles/dzire-exterior-right-front-three-quarter-3.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+}
+.car{
+  box-shadow:5px 5px 5px black;
+}
