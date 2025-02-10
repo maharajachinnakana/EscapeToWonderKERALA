@@ -48,101 +48,75 @@ nav{
   display:flex;
   justify-content:end;
   top:10px;
-  left:px;
+  left:87%;
+    .icon{
+      z-index:1;
+    }
     .round{
       width:35px;
       height:35px;
       border-style:solid;
-      border-color:blac;
+      border-color:black;
       border-radius:8px;
       border-width:3px;
-      background-color:transparent;
+      background-color: transparent;
       display:flex;
       flex-direction:column;
       justify-content:center;
-      align-items: center;
-      gap:2px;
-      margin-top:;
-      margin-left:337px;
+      align-items:center;
+      gap:4px;
       text-shadow:0 0 5px white;
-      z-index:0;
-      box-shadow:0px 0px 4px black;
+      z-index:2;
     }
-  .line{
-    
-    height:7px;
-    width:30.9px;
-    border-style:solid;
-    border-width:1.5px;
-    border-color:black;
-    border-radius:8px;
-    background-color:black;
-    box-shadow:;
-  }
-  .round:hover{
-    transform:scaleX(11px)
-  }
+    .line{
+      height:5px;
+      width:30px;
+      border-style:solid;
+      border-width:1.5px;
+      border-color: black;
+      border-radius:8px;
+      background-color:black;
+      z-index:3;
+    }
 
 /* Menu items (hidden initially) */
-.menu-items {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 10px;
-  position: absolute;
-  left: 30px; /* Position next to the line */
-  opacity: 0; /* Initially hidden */
-  pointer-events: none; /* Prevent interaction when hidden */
-  transition: opacity 0.5s ease; /* Smooth fade-in */
-}
+    .menu-items {
+      height:240px;
+      width:220px;
+      padding-left:5px;
+      background-color:#000000B8;
+      border-color:black;
+      border-style:solid;
+      border-width:2px;
+      border-radius:18px 0 0 18px;
+      display: flex;
+      flex-direction:column;
+      justify-content:end;
+      align-items:start;
+      position: absolute;
+      font-weight:900;
+      right:-8px;
+      top:-3px;
+      gap:10px;
+      z-index:1;
+      visibility:hidden;
+    }
 
 /* Styling for the menu links */
-.menu-items a {
-  text-decoration: none;
-  color: white;
-  font-size: 18px;
-}
+    .menu-items a {
+      margin-right:-20px;
+      text-decoration: none;
+      background-color:;
+      text-shadow:1px 1px 2px black;
+      color:#F38B26;
+      font-size: 18px;
+    }
+  
+  }
 
-/* Hover or focus-within state */
-.round:hover,
-.round:focus-within {
-  height:250px;
-  width:190px;
-  border-width:5px;
-  border-color: white;
-  border-radius:28px;
-  margin-left:15%;
-  background-color:lightgray;
-    .line{
-      visibility: hidden;
-  }
- 
-  .navlis{
-    display:flex;
-    flex-direction:column;
-    gap:10px;
-    color:black;
-    font-weight:900;
-    font-size:;
-    
-  }
-}
-.round:hover .line,
-.round:focus-within .line{
-  visibility:hidden;
-}
-.round:hover .menu-items,
-.round:focus-within .menu-items {
-  display:flex;
-  flex-direction:column;
-  margin-left:200px;
-  align-items:start;
-  opacity: 1; /* Show menu items */
-  pointer-events: auto;/* Allow interaction */
-}
-}
+
 .munnar {
-  margin-top:-75px;
+  margin-top:-15%;
   background-color:; /* Optional */
   width:100vw;
   height: 100vh;
@@ -151,7 +125,7 @@ nav{
   scroll-snap-type: x mandatory; /* Snap horizontally */
   display: flex;
   flex-direction: row; /* Horizontal scrolling layout */
-  gap: 30px;
+  gap:30px;
 }
 
 .photo{
@@ -270,9 +244,8 @@ nav{
 
 
 .row-track{
-  margin-top:5px;
   position:relative;
-  top:-80px;
+  top:-85px;
   background-color:;
   display:flex;
   flex-direction:row;
@@ -306,7 +279,7 @@ nav{
     .thekkady-direction,.mattupatti-direction,.cochin-direction,.coimbatore-direction{
       font-size:30px;
       margin-left:65px;
-      margin-top:4px;
+      margin-top:-5px;
       color:black;
     }
     .coimbatore-direction{

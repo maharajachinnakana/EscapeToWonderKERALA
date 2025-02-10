@@ -1,26 +1,3 @@
-      document.querySelectorAll('.toggle-header').forEach(function(header) {
-        header.addEventListener('click', function() {
-          const content = this.nextElementSibling;
-          if (content.style.display === "block") {
-            content.style.display = "none";
-          } else {
-            content.style.display = "block";
-          }
-        });
-      });
-
-      function toggleFields() {
-        var service = document.getElementById("service").value;
-        var additionalFields = document.getElementById("additional-fields");
-
-        if (service) {
-          additionalFields.classList.remove("hidden");
-        } else {
-          additionalFields.classList.add("hidden");
-        }
-      }
-      
-   //menu bar   
 var menui = document.querySelector(".round");
 var menuItem = document.querySelector(".menu-items");
 var icon = document.querySelector(".icon");
@@ -29,8 +6,8 @@ var menuOpen = false;
 function menu() {
   // Scale the round button
   if (!menuOpen){
-      menui.style.marginLeft = "45%"
-      menui.style.marginTop = "-20%"
+      menui.style.marginLeft = "90%"
+      menui.style.marginTop = "-21%"
       menui.style.borderColor = "transparent"
       menuItem.style.visibility = "visible"
   // Adjust the icon margin left
@@ -40,7 +17,7 @@ function menu() {
       var fx = lines[0]
       var sx = lines[1]
       var tx = lines[2]
-      sx.style.marginTop = "-11px";
+      sx.style.marginTop = "-12px";
       fx.style.marginTop = "15px";
       tx.style.visibility = "hidden";
       sx.style.transform = "rotate(45deg)"
@@ -53,18 +30,18 @@ function menu() {
       
   }
   else {
-      menui.style.marginLeft = "10px"
-      menui.style.marginTop = "-61px"
-      menui.style.borderColor = "white"
+      menui.style.marginLeft = "5%"
+      menui.style.marginTop = "-62px"
+      menui.style.borderColor = "orange"
       menuItem.style.visibility = "hidden"
       // Adjust the icon margin left
-      icon.style.marginLeft = "0%"; // Reset icon margin left (optional)
+      icon.style.marginLeft = "87%"; // Reset icon margin left (optional)
 
       var fx = lines[0]
       var sx = lines[1]
       var tx = lines[2]
-      sx.style.backgroundColor = "white"
-      fx.style.backgroundColor = "white"
+      sx.style.backgroundColor = "orange"
+      fx.style.backgroundColor = "orange"
       sx.style.transform = "rotate(0deg)"
       fx.style.transform = "rotate(0deg)"
       fx.style.transition = "transform 2s"
