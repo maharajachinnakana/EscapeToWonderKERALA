@@ -23,7 +23,7 @@
   // Automatic scrolling function
   function autoScroll() {
     currentIndex = (currentIndex + 1) % divs.length;
-    divs[currentIndex].scrollIntoView({ behavior: 'smooth' });
+    divs[currentIndex].scrollIntoView({ behavior: 'smooth',block:'nearest' });
   }
 
   // Start automatic scrolling
@@ -35,17 +35,17 @@
   function stopAutoScroll() {
     clearInterval(scrollInterval);
   }
-
-  // Restart automatic scrolling with delay
-  function restartAutoScroll() {
-    clearTimeout(hoverTimeout);
-    hoverTimeout = setTimeout(startAutoScrol, 3000); // Restart after 5 seconds
-  }
+  
 
   // Event listeners for hover
   displayContainer.addEventListener('mouseenter', stopAutoScroll);
-  displayContainer.addEventListener('mouseleave', restartAutoScroll);
-
+  displayContainer.addEventListener('mouseleave', startAutoScroll);
+  displayContainer.addEventListener('touchstart',stopAutoScroll);
+  displayContainer.addEventListener('touchend',startAutoScroll);
+  displayContainer.addEventListener('touchcancel',startAutoScroll);
+  window.addEventListener('touchmove',stopAutoScroll)
+  window.addEventListener('touchend',startAutoScroll)
+ // displayContainer.addEventListener('tuchmove',stopAutoScroll)
   // Initialize automatic scrolling
   startAutoScroll();
   
