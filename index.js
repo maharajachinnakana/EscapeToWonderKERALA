@@ -47,7 +47,7 @@
   window.addEventListener('touchend',startAutoScroll)
   displayContainer.addEventListener('tuchmove',stopAutoScroll)
   // Initialize automatic scrolling
-  startAutoScroll();
+  //startAutoScroll();
   
   
       document.querySelectorAll('.toggle-header').forEach(function(header) {
