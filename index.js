@@ -154,3 +154,37 @@ function menu() {
     
   }
 }
+
+//booknow
+let backgroundBox=document.querySelector('.book-now')
+let form=document.querySelector('.form-content')
+let hidden=document.querySelector('.hidden')
+function openForm() {
+  const heading= document.getElementById('book-now')
+  heading.textContent='FILLING FORM'
+  heading.style.width='98%'
+  heading.style.backgroundColor='white'
+  heading.style.color='red'
+  heading.style.textShadow='1px 1px 0.5px black'
+  heading.style.position='absolute'
+  heading.style.top='13%'
+  heading.style.right='1%'
+  backgroundBox.style.position='absolute'
+  backgroundBox.style.top='0'
+  backgroundBox.style.right='1%'
+  backgroundBox.style.height='100%'
+  backgroundBox.style.backgroundColor='#000000C9'
+  backgroundBox.style.zIndex='1'
+  form.style.display='block'
+  // Tab to edit
+  let btn =document.getElementById('submit')
+  function submitted() {
+    btn.style.borderColor='black'
+    btn.style.boxShadow='1px 1px 3px black'
+    alart('Your submision is succes and we will contact you soon')
+    backgroundBox.style.display='none'
+  // Tab to edit
+  }
+}
+
+

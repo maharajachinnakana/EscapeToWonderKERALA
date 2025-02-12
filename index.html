@@ -64,7 +64,7 @@
       
     <div class="display">
       <div class="display-box">
-        <img class="display-img" src="/pngs/sightseen places Kerala .png" alt="" />
+        <img class="display-img" src="/pngs/sightseen places Kerala .png" alt=""/>
         <a class="display-click" href="/Places to Visit /weppage.html">CHECK NOW</a>
       </div>        
       <div class="display-box">
@@ -85,8 +85,8 @@
       </div>      
     </div>
     <div class="book-now">
-      <h2 class="toggle-header">BOOK NOW</h2>
-      <div class="toggle-content">
+      <h2 id="book-now" onclick="openForm()">BOOK NOW</h2>
+      <div class="form-content">
         <form class="form"action="/submit" method="post">
           <label for="name">Name:</label>
           <input type="text" id="name" name="name" required><br><br>
@@ -120,7 +120,7 @@
                         
           </div>
 
-          <input type="submit" value="Submit" id="submit">
+          <input type="submit" id="submit" onclick="submitted()">
         </form>
       </div>
     </div>

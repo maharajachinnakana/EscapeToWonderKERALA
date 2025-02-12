@@ -191,7 +191,7 @@ nav{
   width:98vw;
   border-radius:18px;
   justify-items:center;
-    .toggle-header{
+    #book-now{
       color:white;
       background-color:rgba(255, 29, 81, 1);
       font-size: 30px;
@@ -201,15 +201,17 @@ nav{
       width:80vw;
       cursor:pointer;
       margin-top:10px;
+      text-shadow: 1px 1px 0.5px black;
     }
-    .toggle-content {
+    .form-content{
       width:98vw;
       color:;
       border-radius:18px;
       background-color:white;
-      margin-top:-15px;
+      margin-top:37%;
       cursor:pointer;
       display:none;
+      z-index:2;
       .form{
         margin-top:10px;
         margin-bottom:10px;
@@ -227,9 +229,12 @@ nav{
         }
         #submit{
           background-color:rgba(255, 29, 81, 1);
+          border-radius:28px;
+          font-size:30px;
           color: white;
           font-weight:900;
-          border: none;
+          text-shadow:1px 1px 0.5px black;
+          box-shadow:3px 3px 5px black;
         }
         .hidden{
           display:none;
