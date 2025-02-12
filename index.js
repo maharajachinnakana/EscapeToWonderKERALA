@@ -1,4 +1,4 @@
-  const divs = document.querySelectorAll('.display-box > .display-img');
+/*  const divs = document.querySelectorAll('.display-box > .display-img');
   const anchors = document.querySelectorAll('.anchor');
   const displayContainer = document.querySelector('.display');
   let currentIndex = 0;
@@ -47,7 +47,7 @@
   window.addEventListener('touchend',startAutoScroll)
   displayContainer.addEventListener('tuchmove',stopAutoScroll)
   // Initialize automatic scrolling
-  //startAutoScroll();
+  //startAutoScroll();*/
   
   
       document.querySelectorAll('.toggle-header').forEach(function(header) {
