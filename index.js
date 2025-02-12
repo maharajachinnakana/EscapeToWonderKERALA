@@ -65,7 +65,7 @@
   displayContainer.addEventListener('touchcancel',startAutoScroll);
   window.addEventListener('touchmove',stopAutoScroll)
   window.addEventListener('touchend',startAutoScroll)
- // displayContainer.addEventListener('tuchmove',stopAutoScroll)
+  displayContainer.addEventListener('tuchmove',stopAutoScroll)
   // Initialize automatic scrolling
   startAutoScroll();
   
