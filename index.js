@@ -1,4 +1,4 @@
-  const divs = document.querySelectorAll('.display-box > .display-img');
+   const divs = document.querySelectorAll('.display-box > .display-img');
   const anchors = document.querySelectorAll('.anchor');
   const displayContainer = document.querySelector('.display');
   let currentIndex = 0;
@@ -28,24 +28,50 @@
 
   // Start automatic scrolling
   function startAutoScroll() {
-    scrollInterval = setInterval(autoScroll, 3000); // Adjust the interval as needed
+    if (!scrollInterval){
+      scrollInterval = setInterval(autoScroll, 3000); // Adjust the interval as needed
+    }
   }
 
   // Stop automatic scrolling
   function stopAutoScroll() {
-    clearInterval(scrollInterval);
+    if (scrollInterval){
+      clearInterval(scrollInterval);
+      scrollInterval=null
+    }
   }
-  
 
+  // Restart automatic scrolling with delay
+  function restartAutoScroll() {
+    clearTimeout(hoverTimeout);
+    hoverTimeout = setTimeout(startAutoScrol, 3000); 
+  }
+    
   // Event listeners for hover
   displayContainer.addEventListener('mouseenter', stopAutoScroll);
-  displayContainer.addEventListener('mouseleave', startAutoScroll);
-  displayContainer.addEventListener('touchstart',stopAutoScroll);
+  displayContainer.addEventListener('mouseleave', restartAutoScroll);
+  displayContainer.addEventListener('touchmove',stopAutoScroll);
   displayContainer.addEventListener('touchend',startAutoScroll);
-  displayContainer.addEventListener('touchcancel',startAutoScroll);
-  window.addEventListener('touchmove',stopAutoScroll)
-  window.addEventListener('touchend',startAutoScroll)
-  displayContainer.addEventListener('tuchmove',stopAutoScroll)
+
+let lastScrollY = window.scrollY;
+
+const check = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    let currentScrollY = window.scrollY;
+    
+    if (entry.isIntersecting) {
+      startAutoScroll()
+      console.log('enterd')
+    } else {
+      stopAutoScroll()
+      console.log('exited')
+    }
+    
+    lastScrollY = currentScrollY;
+  });
+}, { threshold: 0.5 });
+
+check.observe(displayContainer);
   // Initialize automatic scrolling
   startAutoScroll();
   
