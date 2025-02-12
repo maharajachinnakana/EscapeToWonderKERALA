@@ -19,26 +19,6 @@
 
   // Observe each section
   divs.forEach(div => observer.observe(div));
-  //check the elements is in the viewport or not
-  var elements=document.querySelector(".dash-board")
-  var secondElement=document.querySelector(".display")
-  function isInViewport(element) {
-  let rect = element.getBoundingClientRect();
-  return (
-    rect.top >= 0 &&
-    rect.left >= 0 &&
-    rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
-    rect.right <= (window.innerWidth || document.documentElement.clientWidth)
-    );
-  }
-  
-  var result=isInViewport(elements); // true 
-  if (result === true){
-      startAutoScroll()
-  }
-  else{
-      stopAutoScroll()
-  }
 
   // Automatic scrolling function
   function autoScroll() {
