@@ -176,15 +176,8 @@ function openForm() {
   backgroundBox.style.backgroundColor='#000000C9'
   backgroundBox.style.zIndex='1'
   form.style.display='block'
+    
   // Tab to edit
-  let btn =document.getElementById('submit')
-  function submitted() {
-    btn.style.borderColor='black'
-    btn.style.boxShadow='1px 1px 3px black'
-    alart('Your submision is succes and we will contact you soon')
-    backgroundBox.style.display='none'
-  // Tab to edit
-  }
 }
 
 
