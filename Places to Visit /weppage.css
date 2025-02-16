@@ -123,12 +123,12 @@ nav{
   }
   
 .content{
-  margin-left:8px;
+  justify-content:center;
 }
 .box{
   position:relative;
     img{
-      width:96vw;
+      width:98vw;
       height:300px;
       border-radius:18px;
     }
@@ -136,7 +136,7 @@ nav{
 
   .explore{
     position:absolute;
-    bottom:30%;
+    top:62%;
     right:10px;
     border-color:#53F2088C;
     background-color:#0000008A;
