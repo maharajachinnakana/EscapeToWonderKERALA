@@ -97,6 +97,7 @@ nav{
   }
   }
 
+
 .content{
   text-align:center;
   align-items:center;
@@ -105,16 +106,19 @@ nav{
   h1{
     font-weight:900;
     color:orange;
+   }
+  .toggle-content{
+    display:none;
   }
   hr{
     color:green;
     width:90%;
     border-color:yellowgreen;
   }
-  }
   
-.check-availability {
-    color: silver;
+  .check-availability {
+    color:silver;
+  }
   }
 .dash-board{
   width:95vw;
