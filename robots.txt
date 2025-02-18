@@ -1,0 +1,39 @@
+User-agent: *
+Disallow: /admin/
+Disallow: /wp-admin/
+Disallow: /login/
+Disallow: /cart/
+Disallow: /checkout/
+Disallow: /search/
+Disallow: /privacy-policy/
+Disallow: /terms-and-conditions/
+Allow: /
+
+# Block all bots from accessing internal scripts and sensitive files
+Disallow: /*.php$
+Disallow: /*.cgi$
+Disallow: /*.pl$
+Disallow: /*.asp$
+Disallow: /*.aspx$
+Disallow: /*.js$
+Disallow: /*.css$
+
+# Allow Googlebot to index everything except restricted paths
+User-agent: Googlebot
+Allow: /
+Disallow: /admin/
+Disallow: /wp-admin/
+Disallow: /login/
+Disallow: /cart/
+Disallow: /checkout/
+
+# Block spam bots and bad crawlers
+User-agent: AhrefsBot
+Disallow: /
+User-agent: SemrushBot
+Disallow: /
+User-agent: MJ12bot
+Disallow: /
+
+# Sitemap for faster indexing
+Sitemap: https://www.escapetourisms.com/sitemap.xml
