@@ -47,7 +47,7 @@ nav{
   background-color:;
   display:flex;
   justify-content:end;
-  top:10px;
+  top:-50px;
   left:87%;
     .icon{
       z-index:1;
@@ -116,7 +116,7 @@ nav{
 
 
 .munnar {
-  margin-top:-7%;
+  margin-top:-5%;
   background-color:; /* Optional */
   width:100vw;
   height: 100vh;
