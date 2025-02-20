@@ -116,7 +116,7 @@ nav{
 
 
 .munnar {
-  margin-top:-15%;
+  margin-top:-7%;
   background-color:; /* Optional */
   width:100vw;
   height: 100vh;
@@ -245,7 +245,7 @@ nav{
 
 .row-track{
   position:relative;
-  top:-85px;
+  top:-40px;
   background-color:;
   display:flex;
   flex-direction:row;
