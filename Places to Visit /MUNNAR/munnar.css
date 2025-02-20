@@ -278,7 +278,7 @@ nav{
   }
     .thekkady-direction,.mattupatti-direction,.cochin-direction,.coimbatore-direction{
       font-size:30px;
-      margin-left:65px;
+      margin-left:50px;
       margin-top:-5px;
       color:black;
     }
@@ -286,7 +286,9 @@ nav{
       margin-left:65px;
       font-size:29px;
       }
-  
+    .mattupatti-direction{
+      
+    }
 }
   
 .content{
