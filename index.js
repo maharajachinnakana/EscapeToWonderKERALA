@@ -179,23 +179,3 @@ function openForm() {
     
   // Tab to edit
 }
-
-
-//sarakku oppenr 
-/*var opener=document.querySelectorAll('.opener')
-var sarakku=document.querySelectorAll('.sarakku')
-var hiddenKeywords=document.querySelectorAll('.hidden-keyword')
-var closed=true
-function keyword() {
-  // Tab to edit'bloc
-  opener.forEach(function(cap){
-  cap.addEventListener('click'function() {
-      if (sarakku.style.display ==='none'){
-        sarakku.style.display='block'
-      }
-      else{
-        sarakku.style.display='block'
-      }
-    }
-  }
-keyword()*/
