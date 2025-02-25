@@ -1,2 +1,3 @@
-Redirect 301 / https://www.escapetourisms.com/
-Redirect 301 / https://escapetourisms.com/
+RewriteEngine On
+RewriteCond %{HTTP_HOST} ^escapetourisms\.com [NC]
+RewriteRule ^(.*)$ https://www.escapetourisms.com/$1 [L,R=301]
