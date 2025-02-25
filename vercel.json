@@ -8,21 +8,8 @@
   ],
   "redirects": [
     { "source": "/www.escapetourisms.com/:path*", "destination": "https://escapetourisms.com/:path*", "permanent": true },
-    { "source": "/http/:path*", "destination": "https://escapetourisms.com/:path*", "permanent": true }
-  ]
-}
-
-{
-  "redirects": [
-    {
-      "source": "http://escapetourisms.com/:path*",
-      "destination": "https://www.escapetourisms.com/:path*",
-      "permanent": true
-    },
-    {
-      "source": "https://escapetourisms.com/:path*",
-      "destination": "https://www.escapetourisms.com/:path*",
-      "permanent": true
-    }
+    { "source": "/http/:path*", "destination": "https://escapetourisms.com/:path*", "permanent": true },
+    { "source": "http://escapetourisms.com/:path*", "destination": "https://www.escapetourisms.com/:path*", "permanent": true },
+    { "source": "https://escapetourisms.com/:path*", "destination": "https://www.escapetourisms.com/:path*", "permanent": true }
   ]
 }
