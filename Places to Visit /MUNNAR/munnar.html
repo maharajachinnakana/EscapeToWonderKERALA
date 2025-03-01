@@ -14,6 +14,91 @@
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
+    "@graph": [
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "What are the top sightseeing spots in Munnar?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The top sightseeing spots in Munnar include Chiyapara Waterfall, Valara Waterfall, and tea gardens,periyakanal waterfall,lakkam waterfall,gap road view point,located photo point,tea factory,idli hils,flower gardern,election savaari,mattupatti dam,kundala lake eccopoint,top station,eravikulam national park,vattavada,anayurangal dam,sengulam dam."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How to book a taxi service in Munnar?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "You can book a taxi service in Munnar through www.escapetourisms.com online platform or ditect call or text msg on this no of 9497665450."
+              }
+            }
+            // Add more FAQ items as needed
+          ]
+        },
+        {
+          "@type": "LocalBusiness",
+          "name": "Escape to Wonder Kerala Taxi Service",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "685618 munnar chinnakanal",
+            "addressLocality": "Munnar",
+            "addressRegion": "Kerala",
+            "postalCode": "685618",
+            "addressCountry": "IN"
+          },
+          "telephone": "+91-9497665450",
+          "openingHours": "Mo-Su 09:00-18:00",
+          "priceRange": "$$"
+        },
+        {
+          "@type": "Product",
+          "name": "Munnar Taxi Service",
+          "description": "Reliable taxi service for sightseeing in Munnar.",
+          "image": "https://www.escapetourisms.com/pngs/taxi1.png"
+          "offers": {
+            "@type": "Offer",
+            "price": "2500",
+            "priceCurrency": "INR"
+            "availability": "https://schema.org/InStock"
+          }
+          "shippingDetails": {
+            "@type": "OfferShippingDetails",
+            "shippingRate": {
+              "@type": "MonetaryAmount",
+              "value": "0",
+              "currency": "INR",
+            }
+            "hasMerchantReturnPolicy": {
+              "@type": "MerchantReturnPolicy",
+              "returnPolicyCategory": "https://schema.org/NoReturns"
+              
+            }
+            {
+              "@context": "https://schema.org",
+              "@type": "Review",
+              "author": {
+                "@type": "Person",
+                "name": "Jane Doe"
+              },
+              "reviewBody": "Amazing taxi service in Munnar. Highly recommend!",
+              "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": "5"
+              },
+              "itemReviewed": {
+                "@type": "Product",
+                "name": "Munnar Taxi Service"
+              }
+            }
+            // Add more structured data types here as needed, keeping them relevant
+          ]
+        }
+</script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
     "@type": "ContactPage",
     "url": "https://escapetourisms.com/contact",
     "description": "Contact Escape to Wonder Kerala for taxi, hotel, and tour bookings.",
@@ -3181,91 +3266,7 @@
   // Observe each section
   sections.forEach(section => observer.observe(section));
 </script>
-<script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@graph": [
-      {
-        "@type": "FAQPage",
-        "mainEntity": [
-          {
-            "@type": "Question",
-            "name": "What are the top sightseeing spots in Munnar?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "The top sightseeing spots in Munnar include Chiyapara Waterfall, Valara Waterfall, and tea gardens."
-            }
-        },
-          {
-            "@type": "Question",
-            "name": "How to book a taxi service in Munnar?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "You can book a taxi service in Munnar through various online platforms or local service providers."
-            }
-        }
-        // Add more FAQ items as needed
-      ]
-    },
-      {
-        "@type": "LocalBusiness",
-        "name": "Escape to Wonder Kerala Taxi Service",
-        "address": {
-          "@type": "PostalAddress",
-          "streetAddress": "685618 munnar chinnakanal",
-          "addressLocality": "Munnar",
-          "addressRegion": "Kerala",
-          "postalCode": "685618",
-          "addressCountry": "IN"
-        },
-        "telephone": "+91-9497665450",
-        "openingHours": "Mo-Su 09:00-18:00",
-        "priceRange": "$$"
-    },
-      {
-        "@type": "Product",
-        "name": "Munnar Taxi Service",
-        "description": "Reliable taxi service for sightseeing in Munnar.",
-        "image": "https://www.escapetourisms.com/pngs/taxi1.png"
-        "offers": {
-          "@type": "Offer",
-          "price": "2500",
-          "priceCurrency": "INR"
-          "availability": "https://schema.org/InStock"
-        }
-        "shippingDetails": {
-          "@type": "OfferShippingDetails",
-          "shippingRate": {
-          "@type": "MonetaryAmount",
-          "value": "0",
-          "currency": "INR",
-          }
-          "hasMerchantReturnPolicy": {
-            "@type": "MerchantReturnPolicy",
-            "returnPolicyCategory": "https://schema.org/NoReturns"
 
-  }
-  {
-  "@context": "https://schema.org",
-  "@type": "Review",
-  "author": {
-    "@type": "Person",
-    "name": "Jane Doe"
-  },
-  "reviewBody": "Amazing taxi service in Munnar. Highly recommend!",
-  "reviewRating": {
-    "@type": "Rating",
-    "ratingValue": "5"
-  },
-  "itemReviewed": {
-    "@type": "Product",
-    "name": "Munnar Taxi Service"
-  }
-}
-    // Add more structured data types here as needed, keeping them relevant
-  ]
-  }
-</script>
     <script>
       document.querySelectorAll('.toggle-header').forEach(function(header) {
         header.addEventListener('click', function() {
