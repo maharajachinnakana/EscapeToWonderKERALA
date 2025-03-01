@@ -11,31 +11,7 @@ html,body{
   background-color:black;
   font-family:sans-serif;
 }
-.bottom-nav{
-  position: sticky;
-  z-index:1;
-  margin-top:;
-  .end-{
-    position:relative;
-    display:flex;
-    flex-direction:row;
-    height:60px;
-    background-color:rgba(249, 251, 255, 0.55);
-    border-radius:24px 24px 0 0;
-    gap:5px;
-    bottom:-686px;
-  }
-  .callnow,.booknow{
-    border-radius:28px;
-    border-width:3px;
-    color:white;
-    background-color:#00000085;
-    border-color:#27FF6F;
-    font-size:20px;
-    height:39px;
-    font-weight:900;
-  }
-}
+
 nav{
   position:sticky;
   z-index:1;
