@@ -3212,13 +3212,13 @@
         "name": "Escape to Wonder Kerala Taxi Service",
         "address": {
           "@type": "PostalAddress",
-          "streetAddress": "123 Munnar Street",
+          "streetAddress": "685618 munnar chinnakanal",
           "addressLocality": "Munnar",
           "addressRegion": "Kerala",
-          "postalCode": "685612",
+          "postalCode": "685618",
           "addressCountry": "IN"
         },
-        "telephone": "+91-123-4567890",
+        "telephone": "+91-9497665450",
         "openingHours": "Mo-Su 09:00-18:00",
         "priceRange": "$$"
     },
@@ -3245,15 +3245,23 @@
             "returnPolicyCategory": "https://schema.org/NoReturns"
 
   }
-      {
-        "@type": "Review",
-        "author": "Jane Doe",
-        "reviewBody": "Amazing taxi service in Munnar. Highly recommend!",
-        "reviewRating": {
-          "@type": "Rating",
-          "ratingValue": "5"
-        }
-    }
+  {
+  "@context": "https://schema.org",
+  "@type": "Review",
+  "author": {
+    "@type": "Person",
+    "name": "Jane Doe"
+  },
+  "reviewBody": "Amazing taxi service in Munnar. Highly recommend!",
+  "reviewRating": {
+    "@type": "Rating",
+    "ratingValue": "5"
+  },
+  "itemReviewed": {
+    "@type": "Product",
+    "name": "Munnar Taxi Service"
+  }
+}
     // Add more structured data types here as needed, keeping them relevant
   ]
   }
