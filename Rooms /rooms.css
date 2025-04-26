@@ -204,20 +204,24 @@ nav{
  }
  .hotels{
    display:flex;
-   flex-direction:row;
-   overflow-y:scroll;
-   overflow-x:hidden;
-   direction:rtl;
+   flex-direction:row-reverse;
+   overflow-x:scroll;
+   scroll-snap-type:x mandatory;
+   scroll-behavior:smooth;
    color:white;
-   gap:30px;
    margin-top:10px;
    width:98vw;
    background-color:;
    height:23vh;
+   .hotel:nth-child(1),.hotel:nth-child(12){
+    visibility:hidden;
+  }
    .hotel{
-     width:50vw;
+     scroll-snap-align:center;
+     text-align:center;
+     flex:0 0 auto;
+     width:30vw;
      height:23vh;
-     gap:5px;
      img{
        width:30vw;
        height:15vh;

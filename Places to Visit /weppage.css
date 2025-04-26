@@ -152,7 +152,8 @@ nav{
   }
 }
     .toggle-header{
-     margin-left:-70%;
+     text-align:start;
+     margin-left:10px;
      height:10px;
      color: white;
      cursor:none;

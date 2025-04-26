@@ -55,3 +55,44 @@ function menu() {
   }
 }
 
+
+
+// automatic option showing in the find the best hot
+document.addEventListener("DOMContentLoaded", function() {
+  const select = document.getElementById("destination");
+  const heading = document.querySelector(".h1");
+  
+  select.addEventListener("change", function() {
+    heading.textContent = "FIND THE BEST HOTEL IN " + this.value.toUpperCase();
+  });
+});
+
+
+document.addEventListener("DOMContentLoaded",
+  function () {
+    const viewport = document.querySelectorAll(".hotel")
+    function scaleHotels() {
+  const hotels = document.querySelectorAll('.hotel');
+  const center = window.innerWidth / 2;
+  
+  hotels.forEach(hotel => {
+    const rect = hotel.getBoundingClientRect();
+    const itemCenter = rect.left + rect.width / 2;
+    const distance = Math.abs(center - itemCenter);
+    
+    if (distance < rect.width / 2) {
+      hotel.style.opacity = '1'
+      hotel.style.transform = 'scale(1)';
+      hotel.style.transition = 'transform 0.5s ease';
+    } else {
+      hotel.style.opacity = '0.5'
+      hotel.style.transform = 'scale(0.7)';
+      hotel.style.transition = 'transform 0.5s ease';
+    }
+  });
+}
+
+document.querySelector('.hotels').addEventListener('scroll', scaleHotels);
+window.addEventListener('resize', scaleHotels);
+window.addEventListener('load', scaleHotels);
+  });
