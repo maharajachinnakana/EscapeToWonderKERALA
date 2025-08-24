@@ -1,0 +1,85 @@
+* {
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+
+/* body style */
+body {
+  background-color: #000; /* black background */
+  color: #fff; /* white text */
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+.top-nav{
+  width:100vw;
+  height:10vh;
+  background-color:white;
+  display:flex;
+  flex-direction:row;
+  align-items:center;
+  position:sticky;
+}
+.boat-logo{
+  width:20%;
+}
+.page-heading{
+  width:60%;
+}
+.menu-box{
+  width:20%;
+}
+.boat-logo,.page-heading,.menu-box{
+  height:8vh;
+  background-color:white;
+}
+.boat-img{
+  width:100%;
+  height:8vh;
+}
+.page-heading-text{
+  color: #000;
+  font-size:18px;
+  margin-top:2vh;
+  text-align:center;
+}
+.line1,.line2,.line3{
+  height:9px;
+  width:70%;
+  background-color:black;
+  margin-left:10%;
+  margin-top:7px;
+  border-radius:18px;
+}
+.empty{
+  display:none;
+}
+.menu-items{
+  display:none;
+}
+.content{
+  text-align:center;
+  display:block;
+  
+}
+.content-heading{
+  color:orange;
+}
+.box1{
+  background-color: #1F2022D1;
+  width:90vw;
+  border-radius:18px;
+  margin-left:5%;
+}
+.under-line{
+  width:85vw;
+  margin-left:2.5%;
+  border-color:green;
+}
+.point{
+  display:block;
+  text-decoration:none;
+  color:#A4ABFF;
+  margin-left:5px;
+  text-align:left;
+}

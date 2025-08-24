@@ -1,3 +1,0 @@
-RewriteEngine On
-RewriteCond %{HTTP_HOST} ^escapetourisms\.com [NC]
-RewriteRule ^(.*)$ https://www.escapetourisms.com/$1 [L,R=301]
