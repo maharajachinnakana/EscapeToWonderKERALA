@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Customer Reviews | Escape Tourisms</title>
+<style>
+  :root{
+    --bg:#000; --fg:#fff; --accent:#ff8c00; --muted:#b9b9b9; --card:#0e0e0e; --border:#ff8c00;
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0;background:var(--bg);color:var(--fg);font-family:system-ui,Segoe UI,Roboto,Arial,sans-serif}
+
+  a{color:var(--accent);text-decoration:none}
+  .wrap{max-width:1100px;margin:0 auto;padding:28px 18px}
+  header{display:flex;flex-wrap:wrap;gap:12px;align-items:center;justify-content:space-between;margin-bottom:18px}
+  h1{margin:0;font-weight:800;letter-spacing:.2px}
+  .cta-row{display:flex;flex-wrap:wrap;gap:10px}
+
+  .btn{
+    display:inline-flex;align-items:center;gap:.5rem;padding:12px 16px;font-weight:700;border-radius:10px;border:2px solid var(--border);
+    background:transparent;color:var(--fg);cursor:pointer;transition:.2s transform ease, .2s opacity ease;
+  }
+  .btn:hover{transform:translateY(-1px);opacity:.95}
+  .btn.accent{background:var(--accent);color:#000;border-color:var(--accent)}
+
+  .cards{display:grid;grid-template-columns:repeat(1,minmax(0,1fr));gap:14px;margin-top:16px}
+  @media (min-width:700px){.cards{grid-template-columns:repeat(2,minmax(0,1fr))}}
+  @media (min-width:1024px){.cards{grid-template-columns:repeat(3,minmax(0,1fr))}}
+
+  .card{
+    background:var(--card);border:1px solid rgba(255,140,0,.35);border-radius:14px;padding:16px;min-height:160px;position:relative;
+    box-shadow:0 8px 24px rgba(0,0,0,.35);
+  }
+  .meta{display:flex;align-items:center;justify-content:space-between;margin-bottom:8px}
+  .name{font-weight:800;color:var(--accent)}
+  .date{font-size:.85rem;color:var(--muted)}
+  .stars{line-height:1}
+  .star{font-size:18px;filter:drop-shadow(0 0 2px rgba(255,140,0,.25))}
+  .body{color:#f3f3f3;font-size:0.98rem;white-space:pre-wrap}
+  .toolbar{
+    display:flex;flex-wrap:wrap;gap:10px;align-items:center;justify-content:space-between;margin:14px 0 6px;
+    border-top:1px dashed rgba(255,140,0,.4);padding-top:12px
+  }
+  input[type="search"], select{
+    background:#111;border:1px solid rgba(255,140,0,.5);color:#fff;border-radius:10px;padding:10px 12px;outline:none;min-width:230px;
+  }
+  .badge{position:absolute;right:10px;bottom:10px;font-size:.8rem;color:#000;background:var(--accent);padding:4px 8px;border-radius:999px}
+  .empty{opacity:.8;text-align:center;padding:40px;border:1px dashed rgba(255,140,0,.5);border-radius:14px;margin-top:14px}
+  footer{opacity:.8;font-size:.9rem;margin-top:24px}
+
+  /* ---------------- MENU STYLES ---------------- */
+  .menu-btn {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    width: 35px;
+    height: 30px;
+    cursor: pointer;
+    z-index: 1002;
+  }
+  .menu-btn span {
+    display: block;
+    width: 100%;
+    height:6px;
+    margin: 6px 0;
+    background:orange;
+    border-radius: 18px;
+    transition: 0.4s;
+  }
+  .menu-btn.open span:nth-child(1) {
+    transform: rotate(45deg) translate(10px, 7px);
+    background: red;
+  }
+  .menu-btn.open span:nth-child(2) {opacity: 0;}
+  .menu-btn.open span:nth-child(3) {
+    transform: rotate(-45deg) translate(10px, -7px);
+    background: red;
+  }
+
+  .overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: rgba(0,0,0,0.4);
+    overflow-x: hidden;
+    transition: 0.5s;
+    z-index: 1001;
+    display: flex;
+    justify-content:right;
+    align-items: top;
+  }
+  .overlay-content {
+    background: rgba(0,0,0,0.4);
+    border: 2px solid rgba(255,140,0,.5);
+    border-radius: 18px;
+    width: 210px;
+    padding: 20px;
+    text-align:left;
+  }
+  .overlay-content a {
+    padding: 10px 0;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+  }
+  .overlay-content a:hover {color: gold;}
+</style>
+</head>
+<body>
+
+  <!-- 🔥 Menu Button -->
+  <div class="menu-btn" id="menuBtn">
+    <span></span><span></span><span></span>
+  </div>
+
+  <!-- 🔥 Overlay Menu -->
+  <div id="myNav" class="overlay">
+    <div class="overlay-content">
+      <a href="/index.html">Home</a>
+      <a href="/taxi/taxi.html">Taxi</a>
+      <a href="/Rooms /rooms.html">Rooms</a>
+      <a href="/Places to Visit/weppage.html">Sightseeing</a>
+      <a href="/Places to Visit/MUNNAR/Thekkady direction/kolukkumalai/kolukkumalai.html">Kolukkumalai</a>
+      <a href="/Places to Visit /MUNNAR/munnar.html">Munnar</a>
+      <a href="/Places to Visit /ALAPPUZHA /Alappuzha.html">Alappuzha</a>
+      <a href="/review.html">Reviews</a>
+    </div>
+  </div>
+
+  <div class="wrap">
+    <header>
+      <h1>🌟 Customer Reviews</h1>
+      <div class="cta-row">
+        <a class="btn accent" href="https://forms.gle/QxSXZM3tEstpZTHe8" target="_blank" rel="noopener">✍️ Write a Review</a>
+        <a class="btn" href="https://www.facebook.com/share/1CYu47q7BX/" target="_blank" rel="noopener">👍 Review on Facebook</a>
+      </div>
+    </header>
+
+    <div class="toolbar">
+      <input id="search" type="search" placeholder="Search reviews (name, text)..." />
+      <div style="display:flex; gap:10px;">
+        <select id="ratingFilter">
+          <option value="">All ratings</option>
+          <option value="5">★★★★★ Only</option>
+          <option value="4">★★★★☆ & up</option>
+          <option value="3">★★★☆☆ & up</option>
+        </select>
+        <select id="sourceFilter">
+          <option value="">All sources</option>
+          <option value="Google Form">Google Form</option>
+          <option value="Facebook">Facebook</option>
+        </select>
+      </div>
+    </div>
+
+    <div id="cards" class="cards" aria-live="polite"></div>
+    <div id="empty" class="empty" style="display:none;">
+      No reviews match your filters yet. Try clearing the search or add new reviews.
+    </div>
+
+    <footer>
+      <p>Tip: new reviews appear automatically after you <strong>Publish your Google Sheet to CSV</strong> and set the URL below.</p>
+    </footer>
+    <style>
+      .keyword-box{
+        padding:10%;
+        border:dotted;
+        border-radius:18px;
+        border-color: orange;
+      }
+      .heading{
+        font-size:180%;
+      }
+      .keywords{
+        font-size:100%;
+      }
+      .target{
+        color:#0DF34894;
+        border:groove;
+      }
+
+    </style>
+    <div class="keyword-box">
+      <p class="heading">Most search list</p>
+      <h1 class="keywords">reasonable taxi munnar</h1>
+      <a class="target"href="/taxi/taxi.html">click here get  to reasonable taxi in munnar</a>
+      <h2 class="keywords">kerala tour packages</h2>
+      <h2 class="keywords">munnar taxi service</h2>
+      <h2 class="keywords">kolukkumalai jeep safari munnar</h2>
+      <a class="target" href="/Places to Visit /MUNNAR/Thekkady direction /kolukkumalai/kolukkumalai.html">click here to explore kolukkumalai jeep safari munnar</a>
+      
+      <h2 class="keywords">kerala sightseeing</h2>
+      <a class="target" href="/Places to Visit /weppage.html">click here to explore the Kerala sightseeing points and costs</a>
+      <h2 class="keywords">budget kerala tours</h2>
+      <h2 class="keywords">day tour taxi munnar</h2>
+      <h2 class="keywords">munnar airport taxi</h2>
+      <h2 class="keywords">munnar cab service</h2>
+      <h2 class="keywords">kerala sightseeing taxi</h2>
+      <h2 class="keywords">taxi hire munnar</h2>
+      <h2 class="keywords">taxi booking munnar</h2>
+    </div>
+  </div>
+
+<script>
+/* ------- REVIEW LOADING ------- */
+const SHEET_CSV_URL = "https://docs.google.com/spreadsheets/d/e/2PACX-1vTzRU6JUM5lIt2OzA7n6WM7Z9sNjD6_7xEDu7DlW9kNWO-kR9cI_7W96o69TpLJYYLujj4HZ6FAW6G9/pub?output=csv";
+const FACEBOOK_REVIEWS = [];
+const cardsEl = document.getElementById('cards');
+const emptyEl = document.getElementById('empty');
+const searchEl = document.getElementById('search');
+const ratingEl = document.getElementById('ratingFilter');
+const sourceEl = document.getElementById('sourceFilter');
+let allReviews = [];
+
+function starString(n){n=Number(n)||0;return "★".repeat(Math.max(0,Math.min(5,Math.round(n))))+"☆".repeat(5-Math.round(n));}
+function render(list){
+  cardsEl.innerHTML="";
+  if(!list.length){emptyEl.style.display='block';return;}
+  emptyEl.style.display='none';
+  list.forEach(r=>{
+    const card=document.createElement('div');
+    card.className='card';
+    card.innerHTML=`
+      <div class="meta"><div class="name">${escapeHtml(r.name||'Guest')}</div>
+      <div class="date">${r.date?fmtDate(r.date):''}</div></div>
+      <div class="stars"><span class="star">${starString(r.rating||0)}</span></div>
+      <div class="body">${escapeHtml(r.text||'')}</div>
+      <span class="badge">${r.source||'Google Form'}</span>`;
+    cardsEl.appendChild(card);
+  });
+}
+function filterAndRender(){
+  const q=(searchEl.value||"").toLowerCase();
+  const minRating=Number(ratingEl.value||0);
+  const source=sourceEl.value;
+  const filtered=allReviews.filter(r=>{
+    const matchesQ=!q||(r.name&&r.name.toLowerCase().includes(q))||(r.text&&r.text.toLowerCase().includes(q));
+    const matchesR=!minRating||(Number(r.rating)||0)>=minRating;
+    const matchesS=!source||r.source===source;
+    return matchesQ&&matchesR&&matchesS;
+  });
+  render(filtered);
+}
+searchEl.addEventListener('input',filterAndRender);
+ratingEl.addEventListener('change',filterAndRender);
+sourceEl.addEventListener('change',filterAndRender);
+
+function escapeHtml(s){return (s||"").replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));}
+function fmtDate(s){const d=new Date(s);if(isNaN(d)) return s;return d.toLocaleDateString(undefined,{year:'numeric',month:'short',day:'numeric'});}
+function parseCSV(text){const rows=[];let i=0,cur="",inQ=false;const push=()=>{(rows[rows.length-1]||rows.push([]),rows[rows.length-1]).push(cur);cur="";};const newRow=()=>{rows.push([]);};newRow();while(i<text.length){const ch=text[i],next=text[i+1];if(inQ){if(ch==='"'&&next==='"'){cur+='"';i+=2;continue;}if(ch==='"'){inQ=false;i++;continue;}cur+=ch;i++;continue;}else{if(ch==='"'){inQ=true;i++;continue;}if(ch===','){push();i++;continue;}if(ch==='\n'){push();newRow();i++;continue;}if(ch==='\r'){i++;continue;}cur+=ch;i++;}}push();if(rows.length&&rows[rows.length-1].every(c=>c==="")) rows.pop();if(!rows.length) return [];const header=rows[0].map(h=>String(h||"").trim().toLowerCase());return rows.slice(1).map(r=>{const obj={};header.forEach((h,idx)=>obj[h]=r[idx]);return obj;});}
+function mapRows(rows){return rows.map(o=>{const get=kList=>kList.find(k=>k in o&&o[k])?o[kList.find(k=>k in o&&o[k])]:"";return {name:get(['name','your name','guest name'])||'Guest',text:get(['review','feedback','your review / feedback','comments'])||'',rating:Number(String(get(['rating','stars'])).replace(/[^\d.]/g,''))||'',date:get(['timestamp','date'])||'',source:'Google Form'};}).filter(r=>r.text);}
+async function boot(){try{const list=[];if(SHEET_CSV_URL&&SHEET_CSV_URL.startsWith('http')){const res=await fetch(SHEET_CSV_URL,{cache:'no-store'});if(!res.ok) throw new Error('CSV fetch failed');const csv=await res.text();const rows=parseCSV(csv);list.push(...mapRows(rows));}list.push(...FACEBOOK_REVIEWS);list.sort((a,b)=>new Date(b.date||0)-new Date(a.date||0));allReviews=list;filterAndRender();if(!SHEET_CSV_URL||SHEET_CSV_URL==="PASTE_YOUR_PUBLISHED_CSV_URL_HERE"){cardsEl.innerHTML=`<div class="empty"><p><strong>Almost there!</strong></p><p>Publish your Form’s Sheet to CSV and paste the link in code.</p></div>`;}}catch(err){console.error(err);cardsEl.innerHTML=`<div class="empty">We couldn't load your Google Sheet yet.</div>`;}}
+boot();
+
+/* ------- Menu Button Control ------- */
+const menuBtn=document.getElementById("menuBtn");
+const overlay=document.getElementById("myNav");
+menuBtn.addEventListener("click",()=>{
+  menuBtn.classList.toggle("open");
+  overlay.style.width=(overlay.style.width==="100%")?"0":"100%";
+});
+</script>
+</body>
+</html>
