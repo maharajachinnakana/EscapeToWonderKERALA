@@ -1,7 +1,12 @@
 {
   "redirects": [
     {
-      "source": "/:path*",
+      "source": "http://escapetourisms.com/:path*",
+      "destination": "https://www.escapetourisms.com/:path*",
+      "statusCode": 301
+    },
+    {
+      "source": "https://escapetourisms.com/:path*",
       "destination": "https://www.escapetourisms.com/:path*",
       "statusCode": 301
     }
