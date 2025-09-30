@@ -5,7 +5,7 @@
 @media (max-width: 768px) {
 
     .container {
-        width: 100%;
+        width:100%;
         padding: 10px;
     }
 }
@@ -142,33 +142,34 @@ nav{
   }
   }
 .dash-board{
-  width:95vw;
+  width:98vw;
   display:flex;
   flex-direction:row;
   justify-content:center;
   background-color:;
   margin-bottom:5px;
-  .switch{
-    display:block;
+  overflow-x:auto;
+.switch{
+  display:block;
   }
-  img{
-    height:40px;
-    width:44px;
-    background-color:black;
+img{
+  height:38px;
+  width:42px;
+  background-color:black;
   }
-  .png{
-    width:64px;
+.png{
+  width:60px;
   }
-  a{
-    font-size:16px;
-    font-style:bold;
-    color:white;
-    text-shadow:1px 1px 0.5px black;
-    text-decoration:none;
-    background-color:rgba(255, 29, 81, 1);
-    border-radius:18px;
-    padding-left:2px;
-    padding-right:2px;
+a{
+  font-size:16px;
+  font-weight:bold;
+  color:white;
+  text-shadow:1px 1px 0.5px black;
+  text-decoration:none;
+  background-color:rgba(255, 29, 81, 1);
+  border-radius:18px;
+  padding-left:2px;
+  padding-right:2px;
   }
 }
 .display{
