@@ -83,3 +83,171 @@ body {
   margin-left:5px;
   text-align:left;
 }
+.box{
+  margin-top:5%;
+}
+.photo{
+  width:90vw;
+  position:relative;
+  margin-left:5vw;
+}
+.name{
+  position:absolute;
+  left:1%;
+  font-weight:900;
+  font-size:20px;
+}
+.main-photo{
+  width:90vw;
+  border-radius:18px;
+}
+.galary-button{
+  position:absolute;
+  bottom:5%;
+  right:1%;
+  font-size:20px;
+  background-color:#00000061;
+  color:white;
+  border-color:#FFF8F8;
+  border-radius:18px;
+}
+.photos{
+  position:relative;
+  width:100vw;
+}
+
+.close-btn{
+  display:none;
+  position:absolute;
+  right:1%;
+  top:0.0px;
+  z-index:1;
+  color:red;
+  border:none;
+  background-color:transparent;
+  font-size:70px;
+}
+.right,.left{
+  display:none;
+  position:absolute;
+  top:28vh;
+  z-index:1;
+  color:white;
+  border:none;
+  border-radius:20px;
+  background-color:#2626264F;
+  font-size:50px;
+  
+}
+.left{
+  left:1px;
+}
+.right{
+  right:1px;
+}
+.galary{
+  background-color: #262626AD;
+  position:absolute;
+  display:none;
+  flex-direction:row;
+  align-items:center;
+  top:0px;
+  left:5vw;
+  width:100vw;
+  overflow:auto;
+  
+}
+.images{
+  width:100vw;
+}
+.details{
+  margin-left:5vw;
+  width:90vw;
+  margin-top:5%;
+  text-align:left;
+}
+.detail{
+  margin-top:1%;
+  color:#a4abff;
+}
+.sub-head{
+  margin-top:2%;
+}
+.head-line{
+  border-color:green;
+}
+.head-line:nth-child(2){
+  width:17%;
+}
+.head-line:nth-child(5){
+  width:20%;
+}
+.head-line:nth-child(8){
+  width:27%;
+}
+.head-line:nth-child(11){
+  width:18%;
+}
+/* Full screen overlay with background blur */
+.gallery-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  backdrop-filter: blur(8px);  /* blur effect */
+  background-color: rgba(0, 0, 0, 0.5); /* slightly dim */
+  z-index: 998;
+  display: none;
+}
+
+/* Center gallery on screen above overlay */
+.galary {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 999;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Center vertical left and right buttons near gallery edges */
+.left, .right {
+  position: fixed;
+  top: 80%;
+  transform: translateY(-50%);
+  font-size: 50px;
+  background-color: rgba(38, 38, 38, 0.3);
+  color: white;
+  border-radius: 28px;
+  border: none;
+  cursor: pointer;
+  height: 60px;
+  width: 60px;
+  z-index: 1000;
+  display: none;
+}
+
+.left {
+  left: 20px;
+}
+
+.right {
+  right: 20px;
+}
+
+/* Close button top right on gallery */
+.close-btn {
+  position:fixed;
+  top:15%;
+  right: 10px;
+  font-size: 70px;
+  color:red;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  z-index: 1001;
+  display: none;
+}
