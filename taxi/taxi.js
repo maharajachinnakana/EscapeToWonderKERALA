@@ -29,7 +29,7 @@ var menuOpen = false;
 function menu() {
   // Scale the round button
   if (!menuOpen){
-      menui.style.marginLeft = "45%"
+      menui.style.marginLeft = "-80%"
       menui.style.marginTop = "-20%"
       menui.style.borderColor = "transparent"
       menuItem.style.visibility = "visible"
@@ -53,9 +53,9 @@ function menu() {
       
   }
   else {
-      menui.style.marginLeft = "10px"
-      menui.style.marginTop = "-61px"
-      menui.style.borderColor = "white"
+      menui.style.marginLeft = "10%"
+      menui.style.marginTop = "-16%"
+      menui.style.borderColor = "orange"
       menuItem.style.visibility = "hidden"
       // Adjust the icon margin left
       icon.style.marginLeft = "0%"; // Reset icon margin left (optional)
@@ -77,3 +77,4 @@ function menu() {
     
   }
 }
+

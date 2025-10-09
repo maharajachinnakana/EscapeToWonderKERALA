@@ -23,31 +23,34 @@ nav{
    h1{
     font-weight:900;
     font-size:30px;
-    border-width:1px;
     margin-left:25%;
     margin-top:18px;
-    border-color:white;
-    color:white;
-    text-shadow:1px 1px 2px black;
+    color:orange;
    }
   .back{
-    background-color:black;
-    background-image:url("/taxi/images - 2025-01-16T165015.955.jpeg");
+    backdrop-filter:blur(5px);
+    -webkit-backdrop-filter:blur(5px);
+    background-color:#CCFFF063;
     background-size:cover;
     background-position:center;
     width:98vw;
     height:70px;
     border-radius:45px;
+    #border-style:solid;
+    #border-width:2px;
+    #border-color:#CCFFF0;
     .icon{
-      margin-left:10px;
-      margin-top:-61px;
+      position: relative;
+      margin-top:-56px;
       z-index:1;
     }
     .round{
+      position: absolute;
+      right:5%;
       width:37px;
       height:37px;
       border-style:solid;
-      border-color:white;
+      border-color:orange;
       border-radius:8px;
       border-width:3px;
       background-color: transparent;
@@ -70,7 +73,15 @@ nav{
       box-shadow: 0 0 1px black;
       z-index:3;
     }
-
+.taxi-logo{
+  position: absolute;
+  top:15%;
+  left:5%;
+  width:15%;
+  height:70%;
+  border-radius:60%;
+  background-color: transparent;
+}
 /* Menu items (hidden initially) */
     .menu-items {
       height:220px;
@@ -80,14 +91,14 @@ nav{
       border-color:black;
       border-style:solid;
       border-width:2px;
-      border-radius:0 18px 18px 0;
+      border-radius:18px 0 0 18px ;
       display: flex;
       flex-direction:column;
       justify-content:end;
       align-items:start;
       position: absolute;
       font-weight:900;
-      left:0px;
+      right:-80%;
       top:-.0px;
       gap:10px;
       z-index:2;
@@ -106,43 +117,137 @@ nav{
     }
   }
   }
+.bottom-nav{
+  position:fixed;
+  margin-top:90.6vh;
+  margin-left:1vw;
+}
+.book-box{
+  position: fixed;
+  bottom:0;
+  backdrop-filter:blur(5px);
+  -webkit-backdrop-filter:blur(5px);
+  border-color:#CCFFF0;
+  border-width:2px;
+  border-radius:30px;
+  height:9vh;
+  width:98vw;
+  text-align:center;
+  overflow:hidden;
+  transform-origin:bottom center;
+}
+
+.x,label,h4,#date,input{
+  visibility:hidden;
+  opacity:0;
+}
+.book-box.active{
+  height:89vh;
+  transition:transform 0.5s ease;
+  width:98vw;
+  background-color:#CCFFF063;
+}
+
+.book-box.active .x,.book-box.active #date,.book-box.active label,.book-box.active input,.book-box.active h4{
+  visibility: visible;
+  opacity:1;
+  transition: opacity 0.5s ease;
+}
+.x{
+  position: absolute;
+  left:84%;
+  color:#FF0A48;
+  background-color:#CCFFF063;
+  border-radius:70px;
+  border:solid;
+  appearance:none;
+  -webkit-appearance:none;
+  outline:none;
+  border-width:2px;
+  border-color:#CCFFF0;
+  font-weight:900;
+  font-size:260%;
+  width:15vw;
+}
+.x:active{
+  border-color:#0AFFB7;
+}
+.book-now {
+  width: 98vw;
+  height: 9vh;
+  bottom: 0%;
+  border-radius:30px;
+  border-style:solid;
+  border-color:#ccfff0;
+  border-width:2px;
+  background-color: #CCFFF063;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(1px);
+  appearance: none;
+  -webkit-appearance: none;
+  outline: none;
+  font-size: 200%;
+  font-weight: 900;
+  color: orange;
+  transition:border 0.3s ease,border-color 0.3s ease;
+}
+.book-box.active .book-now {
+  border-style:solid;
+  border-width:5px;
+  border-color:#CCFFF0;
+}
+.book-now:active {
+  border-style: solid;
+  border-width: 2px;
+  border-color: #0AFFB7;
+  border-radius: 30px;
+}
+
 
 .content{
   color:white;
   margin-top:-15px;
-  h1{
+}
+.toggle-header:nth-child(1){
     background-color:;
     font-size:30px;
     text-align:center;
     font-weight:900;
     color:orange;
-  }
-  hr{
+}
+.paragraph{
+  color:white;
+  text-decoration:none;
+}
+hr{
     color:green;
     width:90%;
     border-color:yellowgreen;
-  }
-  }
-  h2{
+}
+  
+h2{
     font-size:30px;
     text-align:center;
     color:#E92159;
     font-weight:900;
-  }
-  h3{
+}
+h3{
     text-decoration-line:underline;
     font-weight:1000;
     font-size:21px;
     color: #7A71FF;
     text-align:center;
-  }
+}
   .list{
     margin-left:4.5px;
     padding-bottom:5px;
-    margin-top:-10px;
+    margin-top:1%;
     width:98%;
-    background-color:white;
+    background-color:#6F6A6C33;
+    border-style:solid;
+    border-color:#8BF2D48F;
     border-radius:28px;
+    color:white;
   }
   a{
     gap:5px;
@@ -150,7 +255,7 @@ nav{
     text-decoration:none;
     display:block;
     margin-left:8px;
-    color: #000000;
+    color:white;
     font-weight:900;
   }
   p{
@@ -158,9 +263,10 @@ nav{
     text-align:start;
     margin-left:5px;
     font-weight:1000;
+    color:white;
   }
   .para{
-    color:#29366B;
+    color:white;
     font-weight:1000;
   }
      .toggle-header{
