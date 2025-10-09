@@ -68,6 +68,9 @@ body {
 .box1{
   background-color: #1F2022D1;
   width:98vw;
+  border-style:solid;
+  border-width:0.5px;
+  border-color: green;
   border-radius:18px;
   margin-left:1vw;
 }
@@ -100,6 +103,9 @@ body {
 .main-photo{
   width:90vw;
   border-radius:18px;
+  border-style:solid;
+  border-color:orange;
+  border-width:1px;
 }
 .galary-button{
   position:absolute;
