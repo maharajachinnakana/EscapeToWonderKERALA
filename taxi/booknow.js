@@ -38,3 +38,21 @@ closeBtn.addEventListener("click", () => {
   bookNowBtn.textContent = "BOOK NOW";
 });
 
+// rate chart toggle to para
+
+// எல்லா car h3 tags select பண்ணுறோம் (id அல்ல, tag/class name சரியாக எழுதணும்)
+const cards = document.querySelectorAll('.car');
+const paras = document.querySelectorAll('.para');
+
+// ஒவ்வொரு carக்கும் event listener add பண்ணுறோம்
+cards.forEach((card, index) => {
+  card.addEventListener('click', () => {
+    const para = paras[index]; // அதே index-க்கு உரிய paragraph
+    
+    if (para.style.display === 'block') {
+      para.style.display = 'none';
+    } else {
+      para.style.display = 'block';
+    }
+  });
+});

@@ -22,9 +22,10 @@ nav{
   top:2px;
    h1{
     font-weight:900;
-    font-size:30px;
-    margin-left:25%;
-    margin-top:18px;
+    font-size:20px;
+    margin-left:23%;
+    margin-top:25px;
+    display:inline-block;
     color:orange;
    }
   .back{
@@ -41,7 +42,7 @@ nav{
     #border-color:#CCFFF0;
     .icon{
       position: relative;
-      margin-top:-56px;
+      margin-top:-45px;
       z-index:1;
     }
     .round{
@@ -226,12 +227,51 @@ nav{
   color:white;
   text-decoration:none;
 }
+.taxi-rate-section{
+  border-style:solid;
+  border-color:#8BF2D48F;
+  background-color:#6F6A6C33;
+  border-radius:30px;
+}
+.taxi-item{
+  position: relative;
+  margin-left:15%;
+  display:flex;
+  flex:row;
+  #background-color:red;
+}
+
+.taxi-img{
+  margin-top:6%;
+  width:20vw;
+  height:10vh;
+  border-style:solid;
+  border-radius:60px;
+  border-color:#8BF2D48F;
+}
+.taxi-details{
+  font-size:20px;
+  width:80vw;
+}
+.car{
+  color:white;
+  text-align:left;
+}
+.para{
+  display:none;
+}
+#hero{
+  border-style:solid;
+  border-color:#8BF2D48F;
+  background-color:#6F6A6C33;
+  border-radius:30px;
+  padding-bottom:3%;
+}
 hr{
     color:green;
     width:90%;
     border-color:yellowgreen;
 }
-  
 h2{
     font-size:30px;
     text-align:center;
@@ -272,7 +312,7 @@ h3{
     font-weight:1000;
     color:white;
   }
-  .para{
+  .list-para{
     color:white;
     font-weight:1000;
   }
