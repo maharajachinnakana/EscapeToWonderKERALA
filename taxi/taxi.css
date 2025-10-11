@@ -272,11 +272,11 @@ hr{
     width:90%;
     border-color:yellowgreen;
 }
-h2{
+.toggle-header,h2{
     font-size:30px;
     text-align:center;
-    color:#E92159;
     font-weight:900;
+    color:#E92159;
 }
 h3{
     text-decoration-line:underline;
@@ -338,7 +338,13 @@ h3{
    .toggle-header:focus-within h4{
      visibility:visible;
      color:white;
-   }    
+   } 
+.days{
+    background-color:#6F6A6C33;
+    border-style:solid;
+    border-color:#8BF2D48F;
+    border-radius:28px;
+}
    #footer{
   margin-top:10px;
   height:5px;
@@ -348,7 +354,6 @@ h3{
     font-size:20px;
     color:black;
    .toggle-header{
-     color: white;
      cursor:pointer;
      font-weight:900;
      font-size:35px;
