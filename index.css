@@ -84,7 +84,6 @@ nav{
 
 /* Menu items (hidden initially) */
     .menu-items {
-      height:250px;
       width:220px;
       padding-left:5px;
       background-color:#000000B8;
@@ -99,7 +98,7 @@ nav{
       position: absolute;
       font-weight:900;
       right:0px;
-      top:-.0px;
+      top:0;
       gap:10px;
       z-index:1;
       visibility:hidden;
