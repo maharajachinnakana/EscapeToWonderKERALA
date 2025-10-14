@@ -139,7 +139,8 @@ nav{
   width:98vw;
   text-align:center;
   overflow:hidden;
-  #transform-origin:bottom center;
+  transition: all 0.4s ease;
+
 }
 .book-now {
   position:fixed;
