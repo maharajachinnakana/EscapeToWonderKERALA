@@ -22,10 +22,14 @@ nav{
   justify-content:center;
   top:2px;
   .kolukkumalai{
-    background-color:black;
+    background-color:#000000C2;
     width:98vw;
     height:75px;
-    border-radius:18px;
+    border-radius:40px;
+    border:2px solid;
+    border-color:black;
+    backdrop-filter:blur(5px);
+    -webkit-backdrop-filter:blur(5px);
     h1{
       color:silver;
       text-align:center;
@@ -37,13 +41,14 @@ nav{
     }
     .logo{
       z-index:1;
-      height:70px;
-      width:70px;
-      margin-left:5px;
+      height:60px;
+      width:60px;
+      margin-left:8px;
+      margin-top:3px;
     }
     .icon{
-      margin-left:88%;
-      margin-top:-62px;
+      margin-left:87%;
+      margin-top:-54px;
       z-index:1;
     }
     .round{
@@ -76,21 +81,20 @@ nav{
 
 /* Menu items (hidden initially) */
     .menu-items {
-      height:250px;
       width:220px;
       padding-left:5px;
       background-color:#000000B8;
       border-color:black;
       border-style:solid;
       border-width:2px;
-      border-radius:18px 0 0 18px;
+      border-radius:18px 0 0  18px;
       display: flex;
       flex-direction:column;
       justify-content:end;
       align-items:start;
       position: absolute;
       font-weight:900;
-      right:0px;
+      right:-2%;
       top:-.0px;
       gap:10px;
       z-index:1;
@@ -109,6 +113,122 @@ nav{
     }
   }
   }
+.bottom-nav{
+  position: fixed;
+  bottom:0;
+  left:1%;
+  margin-left:1vw;
+}
+.book-box{
+  position: fixed;
+  bottom:0;
+  left:1%;
+  backdrop-filter:blur(5px);
+  -webkit-backdrop-filter:blur(5px);
+  border-color:black;
+  border-width:2px;
+  border-radius:30px;
+  height:8vh;
+  width:98vw;
+  text-align:center;
+  overflow:hidden;
+  transition: all 0.4s ease;
+
+}
+.book-now {
+  position:fixed;
+  width: 98vw;
+  height:9vh;
+  top:90%;
+  bottom:0;
+  left:1%;
+  border-radius:40px;
+  border-style: solid;
+  border-color: black;
+  border-width: 2px;
+  background-color:#00000085;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(1px);
+  appearance: none;
+  -webkit-appearance: none;
+  outline: none;
+  font-size: 200%;
+  font-weight: 900;
+  color:silver;
+  transition: border 0.3s ease, border-color 0.3s ease;
+}
+.x,label,h4,#date,input{
+  visibility: visible;
+  opacity:0;
+}
+h4{
+  color:orange;
+}
+label,#date,input{
+  color:white;
+}
+.book-box.active{
+  height:81vh;
+  transition:transform 0.5s ease;
+  width:98vw;
+  background-color:#000000C2;
+}
+.book-box.active .x,.book-box.active #date,.book-box.active label,.book-box.active input,.book-box.active h4{
+  visibility: visible;
+  opacity:1;
+  transition: opacity 0.5s ease;
+}
+.x{
+  position: absolute;
+  left:84%;
+  color:#FF0A48;
+  background-color:#000000C2;
+  border-radius:70px;
+  border:solid;
+  appearance:none;
+  -webkit-appearance:none;
+  outline:none;
+  border-width:2px;
+  border-color:black;
+  font-weight:900;
+  font-size:260%;
+  width:15vw;
+}
+.x:active{
+  border-color:#0AFFB7;
+}
+
+.book-box.active .book-now {
+  border-style:solid;
+  border-width:5px;
+  border-color:black;
+}
+.book-now:active {
+  border-style: solid;
+  border-width: 2px;
+  border-color: #0AFFB7;
+  border-radius: 30px;
+}
+
+.escape-tourisms{
+  color:orange;
+  font-weight:900;
+  text-align:center;
+  font-size:35px;
+  text-decoration:underline;
+  text-decoration-color:black;
+}
+.first-para{
+  text-align:center;
+}
+.a-box{
+  text-align:center;
+}
+.a-call{
+  text-decoration:none;
+  text-decoration-skip-ink:auto;
+  font-size:25px;
+}
 .content {
   margin-top:5px;
   border-radius:8px;
@@ -280,9 +400,6 @@ nav{
     visibility:none;
      
    }
-   h4 {
-      visibility:none;
-    }
    .toggle-header:hover.hidden-keyword,
    .toggle-header:focus-within.hidden-keyword,.toggle-header:hover h4,
    .toggle-header:focus-within h4{

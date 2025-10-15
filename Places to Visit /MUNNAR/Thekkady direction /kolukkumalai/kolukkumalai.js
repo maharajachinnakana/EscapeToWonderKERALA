@@ -30,8 +30,8 @@ function menu() {
       
   }
   else {
-      menui.style.marginLeft = "5%"
-      menui.style.marginTop = "-62px"
+      menui.style.marginLeft = "4%"
+      menui.style.marginTop = "-54px"
       menui.style.borderColor = "orange"
       menuItem.style.visibility = "hidden"
       // Adjust the icon margin left
@@ -54,3 +54,4 @@ function menu() {
     
   }
 }
+
