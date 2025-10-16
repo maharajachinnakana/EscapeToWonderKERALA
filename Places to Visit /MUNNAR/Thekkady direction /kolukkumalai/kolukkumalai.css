@@ -14,7 +14,7 @@ html,body{
   background-color:white;
 }
 nav{
-  position:sticky;
+  position:fixed;
   z-index:1;
   background-color:;
   display:flex;
@@ -34,9 +34,9 @@ nav{
       color:silver;
       text-align:center;
       margin-top:-50px;
-      margin-left:30px;
+      margin-left:26px;
       font-weight:900;
-      font-size:28px;
+      font-size:26px;
       z-index:0;
     }
     .logo{
@@ -211,6 +211,7 @@ label,#date,input{
 }
 
 .escape-tourisms{
+  margin-top:25%;
   color:orange;
   font-weight:900;
   text-align:center;
@@ -227,40 +228,72 @@ label,#date,input{
 .a-call{
   text-decoration:none;
   text-decoration-skip-ink:auto;
-  font-size:25px;
+  font-size:21px;
 }
-.content {
-  margin-top:5px;
-  border-radius:8px;
-  height: 100vh;
-  overflow-y: auto;
-  overflow-x:hidden;
+.content{
+  width:98vw;
+  margin-left:;
+  margin-top:;
+  border-radius:28px;
+  //overflow-y: auto;
+  //overflow-x:hidden;
   background-repeat: no-repeat;
   /*scroll-snap-type:y mandatory;*/ 
-  display:flex;
-  flex-direction: column;
+  //display:flex;
+  //flex-direction: column;
 }
+.box0{
+  margin-top:5%;
+  width:98vw;
+}
+  .img{
+    width: 98vw;
+    border-radius: 28px;
+    position: relative;
+  }
+  .main-img{
+    width:98vw;
+    margin-left:1vw;
+    object-fit:cover;
+    border-radius:28px;
+
+  }
+.headline{
+      position:absolute;
+      color:white;
+      z-index:0;
+      left:15px;
+      bottom:3%;
+      margin-bottom:;
+      top:;
+      font-size:35px;
+    }
+  .galary-btn{
+    position: absolute;
+    border-radius:28px;
+    background-color:#111111B5;
+    backdrop-filter:blur(5px);
+    -webkit-backdrop-filter:blur(5px);
+    top:1%;
+    right:1%;
+    width:30vw;
+    height:5vh;
+    font-size:25px;
+    color:yellowgreen;
+  }
 .photos{
   visibility: hidden;
   margin-top:-110px;
   padding-bottom:5px;
-  height:100px;
-  width:100px;
+  height:145px;
+  width:145px;
   left:40px; /* Position next to the line */
   opacity:1; /* Initially hidden */
   pointer-events: none; /* Prevent interaction when hidden */
   transition: opacity 3s ease; /* Smooth fade-in */
   transition: scale 5s ease;
-  background-color:gray;
   border-radius:18px;
-  img{
-    margin-left:5px;
-    width:155px;
-    height:155px;
-    object-fit:cover;
-    overflow: scroll;
-    position: relative;
-  }
+  background-color:white;
  
 }
 .img:hover,
@@ -277,14 +310,13 @@ label,#date,input{
   background-color:white;
   visibility: visible;
   position:absolute;
-  width:325px;
-  height:520px;
-  top:115px;
+  width:90vw;
+  top:20%;
+  right:0;
   box-shadow:5px 5px 5px black;
   z-index:1;
   display:grid;
   grid-template-columns:1fr 1fr;
-  margin-left:20px;
   opacity: 1; /* Show menu items */
   pointer-events: auto; 
   overflow:scroll;
@@ -301,7 +333,53 @@ label,#date,input{
 .img:hover .box2,
 .img:focus-within .box2{
   filter: blur(1px);
+  }.img:hover,
+.img:focus-within {
+  border-width:5px;
+  border-color: white;
+}
+.img:hover .box0,
+.img:focus-within .box0 {
+  position:relative;
+}
+
+.img:hover .img,
+.img:focus-within .img,
+.img:hover .headline,
+.img:focus-within .headline,
+.img:hover .box,
+.img:focus-within .box,
+.img:hover .box1,
+.img:focus-within .box1,
+.img:hover .box2,
+.img:focus-within .box2{
+  filter: blur(1px);
   }
+
+.box1,.box2,.box3,.box4,.box5{
+  width:98vw;
+}
+ .box1,.box2,.box3,.box4,.box5{
+      background-color:silver;
+      border-radius:18px;
+      margin-left:1vw;
+      text-align:center;
+      padding-bottom:2%;
+      margin-top:;
+      gap:5px;
+    }
+
+    h3{
+      color:lightyellow;
+      font-size:30px;
+      margin-left:10px;
+      margin-top:8px;
+      text-shadow:5px 5px 5px black;
+      text-align:start;
+    }
+ 
+
+
 
 
 @keyframes scroll{
@@ -314,55 +392,21 @@ label,#date,input{
   }
 }
 
-.box0:nth-child(2),.box0:nth-child(3),.box0.box0:nth-child(4),.box0:nth-child(5){
+/*.box0:nth-child(2),.box0:nth-child(3),.box0.box0:nth-child(4),.box0:nth-child(5){
   scroll-snap-align:start;
   animation: scroll linear alternate;
   animation-timeline:view();
-  animation-range: entry 0 cover 40%;
+  animation-range: entry 0 cover 5%;
   /*transition: transform 0.5s ease-in-out;*/
  }
-.content{
-  max-width:100%;
-  text-align:center;
-  box-sizing: border-box;
-  overflow: auto;
-  color:black;
-  border-radius:8px;
-  display:flex;
-  flex-direction:column;
-  .img{
-    position: relative;
-    img{
-      margin-top:5px;
-      width:97%;
-    
-      border-radius:18px;
-      box-shadow: -5px 5px 10px black;
-    
-    }  
-    .headline{
-      position:absolute;
-      color:white;
-      z-index:0;
-      left:15px;
-      bottom:.05px;
-      margin-bottom:-0px;
-      top:;
-      font-size:35px;
-    }
-   
-  }
+
+  
+
+  
 
 
-    .box1,.box2,.box3,.box4{
-      background-color:silver;
-      border-radius:18px;
-      margin-left:5px;
-      margin-right:5px;
-      margin-top:20px;
-      gap:10px;
-    }
-    p{
+
+    /*p{
       text-align:start;
       margin-left:5px;
       margin-right:5px;
@@ -370,21 +414,13 @@ label,#date,input{
       margin-top:-10px;
       font-size:25px;
       font-weight:900;
-    }
+    }*/
     /*{
       font-size:25px;
       margin-left:10px;
       margin-top:8px;
       text-shadow:5px 5px 5px black;
     }*/
-    h3{
-      color:lightyellow;
-      font-size:30px;
-      margin-left:10px;
-      margin-top:8px;
-      text-shadow:5px 5px 5px black;
-      text-align:start;
-    }
 
  }
  .box3,.box1,.box2,.box4{
@@ -396,20 +432,21 @@ label,#date,input{
      cursor l:pointer;
      display:none;
    }
-   .hidden-keyword {
-    visibility:none;
+
+ }
+ .toggle-content{
+   display:none;
+ }
+.hidden-keyword {
+  visibility:none;
      
    }
-   .toggle-header:hover.hidden-keyword,
-   .toggle-header:focus-within.hidden-keyword,.toggle-header:hover h4,
+.toggle-header:hover.hidden-keyword,
+.toggle-header:focus-within.hidden-keyword,.toggle-header:hover h4,
    .toggle-header:focus-within h4{
      visibility: visible;
    }
- }
  
- .photos{
-   background-color:white;
- }
 
 #footer{
   margin-top:10px;
