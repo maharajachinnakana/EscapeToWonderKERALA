@@ -1,0 +1,11 @@
+table{
+ border:solid 2px silver;
+ background-color:black;
+ border-radius:20px;
+ width:98vw;
+ margin-left:1vw;
+}
+th,td{
+ color:white;
+ text-align:left;
+}

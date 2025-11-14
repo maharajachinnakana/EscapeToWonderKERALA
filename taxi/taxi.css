@@ -7,282 +7,50 @@ html,body{
   height:100vh;
   margin:0;
   padding:0;
-  overflow-x:hidden;
-  background-color:black;
+  background-color:white;
   font-family:sans-serif;
 }
 
-nav{
-  position:sticky;
-  z-index:1;
-  background-color:;
-  display:flex;
-  flex-direction:row;
-  justify-content:center;
-  top:2px;
-   h1{
-    font-weight:900;
-    font-size:20px;
-    margin-left:23%;
-    margin-top:25px;
-    display:inline-block;
-    color:orange;
-   }
-  .back{
-    backdrop-filter:blur(5px);
-    -webkit-backdrop-filter:blur(5px);
-    background-color:#CCFFF063;
-    background-size:cover;
-    background-position:center;
-    width:98vw;
-    height:70px;
-    border-radius:45px;
-    #border-style:solid;
-    #border-width:2px;
-    #border-color:#CCFFF0;
-    .icon{
-      position: relative;
-      margin-top:-43px;
-      z-index:1;
-    }
-    .round{
-      position: absolute;
-      right:5%;
-      width:37px;
-      height:37px;
-      border-style:solid;
-      border-color:orange;
-      border-radius:8px;
-      border-width:3px;
-      background-color: transparent;
-      display:flex;
-      flex-direction:column;
-      justify-content:center;
-      align-items:center;
-      gap:5px;
-      text-shadow:0 0 5px white;
-      z-index:2;
-    }
-    .line{
-      height:7px;
-      width:30px;
-      border-style:solid;
-      border-width:1.5px;
-      border-color:white;
-      border-radius:8px;
-      background-color:white;
-      box-shadow: 0 0 1px black;
-      z-index:3;
-    }
-.taxi-logo{
-  position: absolute;
-  top:15%;
-  left:5%;
-  width:15%;
-  height:70%;
-  border-radius:60%;
-  background-color: transparent;
-}
-/* Menu items (hidden initially) */
-    .menu-items {
-      width:220px;
-      padding-left:5px;
-      background-color:#000000B8;
-      border-color:black;
-      border-style:solid;
-      border-width:2px;
-      border-radius:18px 0 0 18px ;
-      display: flex;
-      flex-direction:column;
-      justify-content:end;
-      align-items:start;
-      position: absolute;
-      font-weight:900;
-      right:-80%;
-      top:-.0px;
-      gap:10px;
-      z-index:2;
-      visibility:hidden;
-    }
-
-/* Styling for the menu links */
-    .menu-items a {
-      /*width:215px;*/
-      margin-right:-20px;
-      text-decoration: none;
-      background-color:;
-      text-shadow:1px 1px 2px black;
-      color:#F38B26;
-      font-size: 18px;
-    }
-  }
-  }
-.bottom-nav{
-  position: fixed;
-  bottom:0;
-  left:1%;
-  #margin-top:90.6vh;
-  margin-left:1vw;
-  background-color:red;
-}
-.book-box{
-  position: fixed;
-  bottom:0;
-  left:1%;
-  backdrop-filter:blur(5px);
-  -webkit-backdrop-filter:blur(5px);
-  border-color:#CCFFF0;
-  border-width:2px;
-  border-radius:30px;
-  height:8vh;
-  width:98vw;
-  text-align:center;
-  overflow:hidden;
-  transition: all 0.4s ease;
-
-}
-.book-now {
-  position:fixed;
-  width: 98vw;
-  height:9vh;
-  #top:90%;
-  bottom:0;
-  left:1%;
-  border-radius:40px;
-  border-style: solid;
-  border-color: #ccfff0;
-  border-width: 2px;
-  background-color: rgba(204, 255, 240, 0.4);
-  backdrop-filter: blur(5px);
-  -webkit-backdrop-filter: blur(1px);
-  appearance: none;
-  -webkit-appearance: none;
-  outline: none;
-  font-size: 200%;
-  font-weight: 900;
-  color: orange;
-  transition: border 0.3s ease, border-color 0.3s ease;
-}
-.x,label,h4,#date,input{
-  visibility:hidden;
-  opacity:0;
-}
-.book-box.active{
-  height:81vh;
-  transition:transform 0.5s ease;
-  width:98vw;
-  background-color:#CCFFF063;
-}
-
-.book-box.active .x,.book-box.active #date,.book-box.active label,.book-box.active input,.book-box.active h4{
-  visibility: visible;
-  opacity:1;
-  transition: opacity 0.5s ease;
-}
-.x{
-  position: absolute;
-  left:84%;
-  color:#FF0A48;
-  background-color:#CCFFF063;
-  border-radius:70px;
-  border:solid;
-  appearance:none;
-  -webkit-appearance:none;
-  outline:none;
-  border-width:2px;
-  border-color:#CCFFF0;
-  font-weight:900;
-  font-size:260%;
-  width:15vw;
-}
-.x:active{
-  border-color:#0AFFB7;
-}
-
-.book-box.active .book-now {
-  border-style:solid;
-  border-width:5px;
-  border-color:#CCFFF0;
-}
-.book-now:active {
-  border-style: solid;
-  border-width: 2px;
-  border-color: #0AFFB7;
-  border-radius: 30px;
-}
 
 
 .content{
-  color:white;
+  color:black;
   margin-top:-15px;
 }
-.toggle-header:nth-child(1){
-    background-color:;
+/*.toggle-header:nth-child(1){
     font-size:30px;
     text-align:center;
     font-weight:900;
     color:orange;
-}
+}*/
 .paragraph{
-  color:white;
+  color:black;
   text-decoration:none;
 }
-.taxi-rate-section{
-  border-style:solid;
-  border-color:#8BF2D48F;
-  background-color:#6F6A6C33;
-  border-radius:30px;
-}
-.taxi-item{
-  position: relative;
-  margin-left:15%;
-  display:flex;
-  flex:row;
-  #background-color:red;
-}
 
-.taxi-img{
-  margin-top:6%;
-  width:20vw;
-  height:10vh;
-  border-style:solid;
-  border-radius:60px;
-  border-color:#8BF2D48F;
-}
-.taxi-details{
-  font-size:20px;
-  width:80vw;
-}
-.car{
-  color:white;
-  text-align:left;
-}
-.para{
-  display:none;
-}
 #hero{
+  color: #000;
+  width:98vw;
+  margin-left:1vw;
   border-style:solid;
-  border-color:#8BF2D48F;
-  background-color:#6F6A6C33;
   border-radius:30px;
   padding-bottom:3%;
+}
+.taxi-packages{
+  width:98vw;
+  margin-left:1vw;
+  border:solid black;
+  border-radius:25px;
 }
 hr{
     color:green;
     width:90%;
     border-color:yellowgreen;
 }
-.toggle-header,h2{
-    font-size:30px;
-    text-align:center;
-    font-weight:900;
-    color:#E92159;
-}
 h3{
     text-decoration-line:underline;
     font-weight:1000;
     font-size:21px;
-    color: #7A71FF;
     text-align:center;
 }
   .list{
@@ -290,19 +58,17 @@ h3{
     padding-bottom:5px;
     margin-top:1%;
     width:98%;
-    background-color:#6F6A6C33;
-    border-style:solid;
-    border-color:#8BF2D48F;
+    border:solid black;
     border-radius:28px;
-    color:white;
+    color:black;
   }
   a{
     gap:5px;
-    font-size:25px;
+    font-size:23px;
     text-decoration:none;
     display:block;
     margin-left:8px;
-    color:white;
+    color: black;
     font-weight:900;
   }
   p{
@@ -310,334 +76,28 @@ h3{
     text-align:start;
     margin-left:5px;
     font-weight:1000;
-    color:white;
+    color:silver;
   }
   .list-para{
-    color:white;
+    color:black;
     font-weight:1000;
   }
-     .toggle-header{
-     color:;
+     /*.toggle-header{
+     color:#42445A;
      cursor:pointer;
      font-weight:900;
    }
-   .toggle-content {
+  /* .toggle-content {
      text-align:center;
      cursor l:pointer;
      display:none;
-     color: white;
+     color: black;
    }
    .hidden-keyword {
      text-align:center;
-    visibility:visible;
      
    }
-   h4 {
-      visibility:none;
-    }
-   .toggle-header:hover.hidden-keyword,
-   .toggle-header:focus-within.hidden-keyword,.toggle-header:hover h4,
-   .toggle-header:focus-within h4{
-     visibility:visible;
-     color:white;
-   } 
+*/
 .days,.our-service{
-    background-color:#6F6A6C33;
-    border-style:solid;
-    border-color:#8BF2D48F;
     border-radius:28px;
 }
-   #footer{
-  margin-top:10px;
-  height:5px;
-  color:white;
- .bottom{
-    text-align: center;
-    font-size:20px;
-    color:black;
-   .toggle-header{
-     cursor:pointer;
-     font-weight:900;
-     font-size:35px;
-   }
-   .toggle-content {
-     cursor l:pointer;
-     display:none;
-     color: white;
-   }
-   .hidden-keyword {
-    visibility:visible;
-     
-   }
-   h4 {
-      visibility:none;
-    }
-   .toggle-header:hover.hidden-keyword,
-   .toggle-header:focus-within.hidden-keyword,.toggle-header:hover h4,
-   .toggle-header:focus-within h4{
-     visibility:visible;
-     
-   }    
-    #contact{
-      font-size:35px;
-      font-weight:900;
-      color: white;
-    }
-  }
-  p{
-    font-size:25px;
-    font-weight:900;
-    color: white;
-  }
-  #about{
-    color:white;
-   
-  }
-  #buttons{
-    color: white;
-    display:flex;
-    flex-wrap:wrap;
-    justify-content:center;
-    gap:10px;
-  }
-  .Box{
-    color: white;
-    border-color:white;
-    border-style:solid;
-    border-width:3px;
-    border-radius:18px;
-    width:98%;
-    margin-left:4px;
-    #book{
-      font-size:30px;
-      font-weight:900;
-      color:white;
-    }
-    .money {
-      width:25px;
-      height:25px;
-      box-shadow: none;
-      margin-top:-30px;
-      margin-left:330px;
-      color: white;
-    }
-    .icon-box{
-      display:flex;
-      flex-direction:row;
-      gap:30px;
-      justify-content:center;
-      img{
-        box-shadow:none;
-        height:50px;
-        width:70px;
-      }
-      .jeep{
-        width:70px;
-        margin-left:-10px;
-      }
-      .button {
-        border-radius:25px;
-        gap: 30px;
-        justify-content: start;
-        align-items: center;
-        font-size:20px;
-        width: 55vw;
-        height:50px;
-        margin-bottom:20px;
-        background-color:black;
-        text-shadow: none;
-        box-shadow: 5px 5px 5px orange;
-        font-weight:900;
-        color: white;
-      }
-    }
-
-  }
-  #or{
-    margin-top:-0.5px;
-  }
-  .whatsapp{
-    box-shadow:5px 5px 5px black;
-    height:40%;
-    display:flex;
-    flex-direction:row;
-    align-items: center;
-    padding:6px 10px;
-    font-size:25px;
-    font-weight:900;
-    color:white;
-    background-color: #25D366;
-    border:solid;
-    border-radius:25px;
-    text-align:center;
-    text-decoration: none;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-        }
-
-  .whatsapp:hover {
-    background-color: #128C7E;
-        }
-  
-
-  .whatsapp i {
-     margin-right: 10px; 
-        }
-  
-  .call{
-    box-shadow: 5px 5px 5px black;
-    height:40%;
-    width:23%;
-    display:flex;
-    flex-direction:row;
-    justify-content: center;
-    align-items:center;
-    gap:10px;
-    padding:6px 10px;
-    font-size:25px;
-    font-weight:900;
-    color:white;
-    background-color: #25D366;
-    border:solid;
-    border-radius:25px;
-    text-align:center;
-    text-decoration: none;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  #calls{
-    box-shadow:none;
-    height:25px;
-    width:25px;
-    border:none;
-    background-color:none;
-    
-  }
-    
-  #phno{
-    padding-top:px;
-    color:white;
-    font-weight:900;
-  }
-  #email{
-    display:inline-block;
-    margin-top:-20px;
-    color:white;
-    font-weight:900;
-    font-size:21px;
-  }
-
-.office{
-  text-align:center;
-  padding-top:50px;
-  color: white;
-}
-
-#o{
-  text-align: center;
-  font-size: 40px;
-}
-
-#op{
-  font-size:25px;
-  color:white;
-}
-#v{
-  font-size:40px;
-  text-align: center;
-
-}
-#vp{
-  font-size:25px;
-  color:white;
-}
-.vehickles{
-  text-align:center;
-  padding-top:30px;
-}
-.img{
-  padding-top:20px;
-  display:flex;
-  flex-wrap:wrap;
-  justify-content:center;
-  gap:20px;
-}
-#crysta{
-  height:200px;
-  width:380px;
-  border-radius:4px;
-  background-image:url('/vehicles/images (97).jpeg');
-  background-size:cover;
-  background-position: center;
-  background-repeat:no-repeat;
-  }
-#innova{
-  height:200px;
-  width:378px;
-  border-radius:4px;
-  background-image:url('/vehicles/images (98).jpeg');
-  background-size:cover;
-  background-position: center;
-  background-repeat:no-repeat;
-  
-}
-#ertiga {
-  height: 200px;
-  width: 378px;
-  border-radius:4px;
-  background-image: url('/vehicles/images (100).jpeg');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-
-}
-#travaler{
-  height:250px;
-  width:380px;
-  border-radius:4px;
-  background-image:url('/vehicles/images trav.jpeg');
-  background-size:cover;
-  background-position: center;
-  background-repeat:no-repeat;
-  
-}
-#etios{
-  height: 200px;
-  width: 380px;
-  border-radius:4px;
-  background-image: url('/vehicles/images - 2024-08-23T200234.399.jpeg');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-
-}
-#verito {
-  height: 200px;
-  width: 380px;
-  border-radius:4px;
-  background-image: url('/vehicles/images - 2024-08-23T200302.805.jpeg');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-
-}
-#swift {
-  height: 200px;
-  width: 380px;
-  border-radius:4px;
-  background-image: url('/vehicles/dzire-exterior-right-front-three-quarter-3.jpeg');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-
-}
-.car{
-  box-shadow:5px 5px 5px black;
-}
-
-
-}
-
-
- 
-  

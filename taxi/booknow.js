@@ -9,6 +9,7 @@ bookNowBtn.addEventListener("click", () => {
   if (!bookBox.classList.contains("active")) {
     bookBox.classList.add("active");
     bookNowBtn.textContent = "SEND ENQUIRY";
+    bookNowBtn.style.fontSize="2rm";
   } 
   // if already active → send to WhatsApp
   else {
@@ -38,21 +39,58 @@ closeBtn.addEventListener("click", () => {
   bookNowBtn.textContent = "BOOK NOW";
 });
 
-// rate chart toggle to para
+//insta fb youtube call up and down
+  const extra = document.querySelector('.extra');
+  let inactivityTimer;
 
-// எல்லா car h3 tags select பண்ணுறோம் (id அல்ல, tag/class name சரியாக எழுதணும்)
-const cards = document.querySelectorAll('.car');
-const paras = document.querySelectorAll('.para');
+  // Function to reset the timer when user is active
+  function resetExtraTimer() {
+    clearTimeout(inactivityTimer);
+    extra.classList.remove('active'); // hide animation when user active
 
-// ஒவ்வொரு carக்கும் event listener add பண்ணுறோம்
-cards.forEach((card, index) => {
-  card.addEventListener('click', () => {
-    const para = paras[index]; // அதே index-க்கு உரிய paragraph
-    
-    if (para.style.display === 'block') {
-      para.style.display = 'none';
-    } else {
-      para.style.display = 'block';
+    // If user is idle for 3 seconds
+    inactivityTimer = setTimeout(() => {
+      extra.classList.add('active'); // show animation
+    }, 3000);
+  }
+
+  // Detect user activity (touch, scroll, move)
+  window.addEventListener('scroll', resetExtraTimer);
+  window.addEventListener('touchstart', resetExtraTimer);
+  window.addEventListener('mousemove', resetExtraTimer);
+
+  // Start the timer initially
+  resetExtraTimer();
+  
+  
+  //click to connect pages and call page up and page down
+    // 👉 Instagram
+  function openInstagram() {
+    window.open("https://www.instagram.com/escape_tourisms", "_blank");
+  }
+  
+  // 👉 Facebook
+  function openFacebook() {
+    window.open("https://www.facebook.com/https://www.facebook.com/share/1CfQtRo5hG/", "_blank");
+  }
+  
+  // 👉 YouTube
+  function openYouTube() {
+    window.open("https://www.youtube.com/@your_channel_here", "_blank");
+  }
+  
+  // 👉 Call directly
+  function makeCall() {
+    window.location.href = "tel:+919497665450"; // Change to your real number
+  }
+  
+  // 👉 Scroll controls
+  function scrollPage(direction) {
+    if (direction === "up") {
+      window.scrollBy({ top: -window.innerHeight, behavior: "smooth" });
+    } else if (direction === "down") {
+      window.scrollBy({ top: window.innerHeight, behavior: "smooth" });
     }
-  });
-});
+  }
+
+

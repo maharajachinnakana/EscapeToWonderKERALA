@@ -61,7 +61,11 @@
       "availableLanguage": ["English", "Malayalam", "Tamil"]  
     }  
   }  
-  </script>    <!-- ✅ Style & Icons -->    <link rel="stylesheet" href="taxi.css" />  
+  </script>    <!-- ✅ Style & Icons -->  
+  <link rel="stylesheet" href="about.css">
+  <link rel="stylesheet" href="toggle-content.css">
+  <link rel="stylesheet" href="top-nav-bottom-nav.css">
+  <link rel="stylesheet" href="taxi.css" />  
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />  
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />    <!-- ✅ Analytics (single ID only for clarity) -->    <script async src="https://www.googletagmanager.com/gtag/js?id=G-N1M0815SB3"></script>    <script>  
     window.dataLayer = window.dataLayer || [];  
@@ -74,61 +78,94 @@
 
 <body>
   
-   <nav>
-    <div class="back">
-      <img class="taxi-logo"src="/taxi/images/taxi-logo.png" alt="escape tourisms taxi service" />
-      <h1>Munnar Taxis Services</h1>
-      <section class="icon">
-        <div class="round" t onclick="menu()">
-          <div class="line"></div>
-          <div class="line"></div>
-          <div class="line"></div>
-          <div class="menu-items">
-            <a class="navlis" href="/index.html">• HOME</a>
-            <a class="navlis" href="#about">• ABOUT</a>
-            <a class="navlis" href="/Places to Visit /weppage.html">• SIGHTSEEING PLACES</a>
-            <a class="navlis"href="/taxi/taxi(1).html">• MUNNAR TAXI</a>
-            <a class="navlis" href="#">• JEEP SAFARI</a>
-            <a class="navlis" href="#">• ROOMS</a>
-            <a class="navlis" href="#">• CAMPING</a>
-            <a href="/gallary.html"> • PHOTOS GALARY</a>
-
-            <a href="/customer reviews.html">• REVIEW</a>
-          </div>
-        </div>
-      </section>
-      
-    </div>
-  </nav>
-  <nav class="bottom-nav">
-    <div class="book-box" id="bookBox">
-      <button class="x">x</button>
-      <h4>Which service you need</h4>
-      <label for="drop">DROP</label>
-      <input type="radio" name="service" id="drop" value="drop" /><br />
-      <label for="pickup">PICKUP</label>
-      <input type="radio" name="service" id="pickup" value="pickup" /><br />
-      <label for="sightseen">SIGHTSEEN</label>
-      <input type="radio" name="service" id="services" value="sightseen" /><br />
-      <label for="pkg">PACKAGE</label>
-      <input type="radio" name="service" id="pkg" value="pkg" /><br />
-      <label for="date">Select the Pickup Date:</label>
-      <input type="date" id="date" /><br />      
-      <h4>which cars you need</h4>
-      <label for="suv">SUV</label>
-      <input type="radio" name="cars" id="xuv" value="xuv" /><br />
-      <label for="xuv">XUV</label>
-      <input type="radio" name="cars" id=xuv"" value="xuv" /><br />
-      <label for="passengers">PASSENGERS</label>
-      <input type="number" name="passengers" id="passengers" value="pass" placeholder="how mani person are you"/><br />
-      <p>Please click the send enquiry then our team will contact you soon</p><br />
-      <p>or </p>
-    </div>
-  
-    <button class="book-now" id="bookBtn">BOOK NOW</button>
-  </nav>
+     <nav>
+       <div class="back">
+         <h1>Munnar Taxi Services</h1>
+         <section class="icon">
+           <div class="round" onclick="menu()">
+             <div class="line" style="width:10vw;"></div>
+             <div class="line" style="width:14vw;"></div>
+             <div class="line" style="width:10vw;"></div>
+             <div class="menu-items">
+               <div class="empty"></div>
+               <a class="navlis" href="/index.html">• HOME</a>
+               <a class="navlis" href="#about">• ABOUT</a>
+               <a class="navlis" href="/Places to Visit /weppage.html">• SIGHTSEEING PLACES</a>
+               <a class="navlis" href="/taxi/taxi(1).html">• MUNNAR TAXI</a>
+               <a class="navlis" href="#">• JEEP SAFARI</a>
+               <a class="navlis" href="#">• ROOMS</a>
+               <a class="navlis" href="#">• CAMPING</a>
+               <a href="/gallary.html"> • PHOTOS GALARY</a>
+               
+               <a href="/customer reviews.html">• REVIEW</a>
+             </div>
+           </div>
+         </section>
+         
+       </div>
+     </nav>
+     <!-- middle nave page top page down call -->
+     
+     <!-- ✅ SEO Optimized Booking Section -->
+     <nav class="bottom-nav">
+       <div class="book-box" id="bookBox">
+         <button class="x">×</button>
+         
+         <!-- 🔹 SEO-friendly headings -->
+         <h4 class="booking-title">Book Your Munnar Taxi or Tour Package Online</h4>
+         <p class="booking-desc">Select your service, car type, and pickup date to get instant WhatsApp confirmation.</p>
+         
+         <label for="drop">Drop</label>
+         <input type="radio" name="service" id="drop" value="Drop" /><br />
+         <label for="pickup">Pickup</label>
+         <input type="radio" name="service" id="pickup" value="Pickup" /><br />
+         <label for="sightseen">Sightseeing</label>
+         <input type="radio" name="service" id="sightseen" value="Sightseeing" /><br />
+         <label for="pkg">Package</label>
+         <input type="radio" name="service" id="pkg" value="Package" /><br />
+         
+         <label for="date">Select the Pickup Date:</label>
+         <input type="date" id="date" /><br />
+         
+         <h4 class="car-title">Select Your Car Type</h4>
+         <label for="suv">SUV</label>
+         <input type="radio" name="cars" id="suv" value="SUV" /><br />
+         <label for="xuv">XUV</label>
+         <input type="radio" name="cars" id="xuv" value="XUV" /><br />
+         
+         <label for="passengers">Passengers</label>
+         <input type="number" id="passengers" placeholder="How many persons?" /><br />
+         
+         <p class="note">Please click "Send Enquiry" and our team will contact you soon!</p>
+       </div>
+       <div class="bottom">
+         <button class="book-now" id="bookBtn">BOOK NOW</button>
+         <div class="insta">
+           <img class="instagram" src="/taxi/icons/instagram-png.png" alt="instagram" onclick="openInstagram()" />
+         </div>
+         <div class="extra">
+           <div class="middle-box">
+             <div class="up" onclick="scrollPage('up')">
+               <div style="border-radius:0 0 18px 18px;" class="left-line"></div>
+               <div style="border-radius:0 0 18px 18px;" class="right-line"></div>
+             </div>
+             <div class="down" onclick="scrollPage('down')">
+               <div style="margin-top:1.8vh;" class="right-line"> </div>
+               <div style="margin-top:1.8vh;" class="left-line"></div>
+             </div>
+             <div class="pngs">
+               <img class="call-png" src="/taxi/icons/call-png.png" alt="call" onclick="makeCall()" />
+             </div>
+             <div class="pngs"><img class="youtube-png" src="/taxi/icons/youtube-png.png" alt="youtube" onclick="openYouTube()" />
+             </div>
+           </div>
+           <div class="fb">
+             <img class="facebook" src="/taxi/icons/facebook-png.png" alt="facebook" onclick="openFacebook()" />
+           </div>
+         </div>
+     </nav>
   <section class="content">
-    <h2 style="orange" class="toggle-header">Escape Tourism</h2>
+    <h2 style="color:orange;margin-top:10vh;text-align:center;font-weight:900;" class="toggle-header">Escape Tourism</h2>
     <div class="toggle-content">
       <h3 class="hidden-keyword">Munnar taxi service</h3>
 <h3 class="hidden-keyword">Munnar tourist taxi online booking</h3>
@@ -156,15 +193,15 @@
 
     </div>
 <div class="our-service">
-  <h2 style="color:#E92159; text-align:center; font-weight:800;">
+  <h2 style="color:black; text-align:center; font-weight:900;">
   Escape to Wonder Kerala – Trusted Munnar Taxi Service
 </h2>
 
-<h3 style="color:white; text-align:center; line-height:1.6; font-weight:500;text-decoration:none;">
+<h3 style="color:black; text-align:center; line-height:1.6; font-weight:500;text-decoration:none;">
   Book your <strong>Munnar private cab</strong> for <strong>sightseeing tours, airport transfers,</strong> and <strong>outstation trips</strong> anywhere in Kerala.
   Enjoy safe rides with <em>professional drivers</em>, <em>clean vehicles</em>, and <em>affordable taxi fares</em> to <strong>Cochin, Thekkady, Alappuzha, Coimbatore</strong> & more.
 </h3>
-<p style="color:#ccc; text-align:center; font-size:15px; margin-top:10px;">
+<p style="color:black; text-align:center; font-size:15px; margin-top:10px;">
   24×7 <strong>Munnar taxi booking</strong> available – fixed rates, verified drivers, and instant WhatsApp booking for your Kerala trip.
 </p> 
 <a href="tel:+919497665450">📲📞Call now to get best offers </a>
@@ -185,13 +222,15 @@
         <div class="taxi-item">
           <img src="/taxi/images/swift.jpg" alt="Swift Dzire taxi in Munnar for local sightseeing and airport transfers" class="taxi-img">
           <div class="taxi-details">
-            <h3 class="car">Swift Dezir (4 Seater)</h3>
-            <p><strong>1km / ₹17</strong></p>
-            <p class="para">Best for small families or couples. Air-conditioned cab for sightseeing & city trips.  🚕 <strong>Need a compact taxi for short trips in Munnar?</strong>
+            <h3 class="toggle-header">Swift Dezir (4 Seater)</h3>
+            <p class="km"><strong>1km / ₹17</strong></p>
+            <div class="toggle-content">
+              <p class="hidden-keyword">Best for small families or couples. Air-conditioned cab for sightseeing & city trips.  🚕 <strong>Need a compact taxi for short trips in Munnar?</strong>
   Our <strong>Swift taxi service</strong> is a budget-friendly choice for solo travelers and couples.
   <strong>“How much does a Swift taxi cost per km in Munnar?”</strong> —
   rates start from <strong>₹13 per km</strong>.
   It’s ideal for quick sightseeing and city transfers around <strong>Munnar</strong> with reliable drivers.</p>
+            </div>
             
           </div>
         </div>
@@ -200,28 +239,34 @@
         <div class="taxi-item">
           <img src="/taxi/images/etios.jpeg" alt="Toyota Etios cab in Munnar available for affordable taxi service and Kerala tour packages" class="taxi-img">
           <div class="taxi-details">
-            <h3 class="car">Etios (4 Seater)</h3>
-            <p><strong>1km / ₹18</strong></p>
-            <p class="para">Spacious 6-seater cab suitable for family groups and long-distance tours.  🚖 <strong>Looking for an affordable taxi in Munnar?</strong>  
-  The <strong>Etios taxi service</strong> from <strong>Escape Tourism</strong> 
-  is perfect for couples or small families.  
-  Many travelers ask, <strong>“What is the per km rate for Etios taxi in Munnar?”</strong> —  
-  our charge starts at <strong>₹14 per km</strong>.  
-  Enjoy a smooth, fuel-efficient, and comfortable ride for sightseeing, 
-  airport transfers, and local trips across <strong>Kerala</strong> and <strong>Tamil Nadu</strong>.</p>
+            <h3 class="toggle-header">Etios (4 Seater)</h3>
+            <p class="km"><strong>1km / ₹18</strong></p>
+            <div class="toggle-content">
+                          <p class="hidden-keyword">Spacious 6-seater cab suitable for family groups and long-distance tours. 🚖 <strong>Looking for an affordable taxi in Munnar?</strong>
+              The <strong>Etios taxi service</strong> from <strong>Escape Tourism</strong>
+              is perfect for couples or small families.
+              Many travelers ask, <strong>“What is the per km rate for Etios taxi in Munnar?”</strong> —
+              our charge starts at <strong>₹14 per km</strong>.
+              Enjoy a smooth, fuel-efficient, and comfortable ride for sightseeing,
+              airport transfers, and local trips across <strong>Kerala</strong> and <strong>Tamil Nadu</strong>.</p>
+            </div>
+
           </div>
         </div>
     <!-- ertiga -->
         <div class="taxi-item">
           <img src="/taxi/images/ertiga.jpg" alt="Maruti Suzuki Ertiga taxi in Munnar – 6-seater family cab for Kerala sightseeing and airport transfers" class="taxi-img">
           <div class="taxi-details">
-            <h3 class="car">Ertiga (6 Seater)</h3>
-            <p><strong>1km / ₹19 </strong></p>
-            <p class="para">Luxury option with extra comfort and luggage space. Ideal for long hill rides.  🚙 <strong>Searching for a comfortable 7-seater taxi in Munnar?</strong>  
-  The <strong>Ertiga taxi service</strong> is one of our most popular family-friendly options.  
-  Many ask, <strong>“What is the per km rate for Ertiga taxi in Munnar?”</strong> —  
-  it starts from <strong>₹16 per km</strong>.  
-  Perfect for small groups and long sightseeing tours to <strong>Kolukkumalai</strong> or <strong>Thekkady</strong>.</p>
+            <h3 class="toggle-header">Ertiga (6 Seater)</h3>
+            <p class="km"><strong>1km / ₹19 </strong></p>
+            <div class="toggle-content">
+                          <p class="hidden-keyword">Luxury option with extra comfort and luggage space. Ideal for long hill rides. 🚙 <strong>Searching for a comfortable 7-seater taxi in Munnar?</strong>
+              The <strong>Ertiga taxi service</strong> is one of our most popular family-friendly options.
+              Many ask, <strong>“What is the per km rate for Ertiga taxi in Munnar?”</strong> —
+              it starts from <strong>₹16 per km</strong>.
+              Perfect for small groups and long sightseeing tours to <strong>Kolukkumalai</strong> or <strong>Thekkady</strong>.</p>
+            </div>
+
           </div>
         </div>
 
@@ -229,26 +274,32 @@
         <div class="taxi-item">
           <img src="/taxi/images/innova.jpg" alt="Toyota Innova taxi Munnar – 6 seater cab for family tours and Cochin airport pickup" class="taxi-img">
           <div class="taxi-details">
-            <h3 class="car">Toyota Innova (6 Seater)</h3>
-            <p><strong>1km / ₹20     </strong></p>
-            <p class="para">Luxury option with extra comfort and luggage space. Ideal for long hill rides.  🚐 <strong>Looking for a premium ride in Munnar?</strong>  
+            <h3 class="toggle-header">Toyota Innova (6 Seater)</h3>
+            <p class="km"><strong>1km / ₹20     </strong></p>
+            <div class="toggle-content">
+                          <p class="hidden-keyword">Luxury option with extra comfort and luggage space. Ideal for long hill rides.  🚐 <strong>Looking for a premium ride in Munnar?</strong>  
   Our <strong>Innova taxi service</strong> provides luxury comfort for families and corporate trips.  
   <strong>“How much does an Innova taxi charge per km in Munnar?”</strong> —  
   rates begin at <strong>₹18 per km</strong>.  
   Enjoy spacious interiors and a safe journey through the scenic routes of <strong>Kerala</strong>.</p>
+            </div>
+
           </div>
         </div>
     <!-- Crysta -->
         <div class="taxi-item">
           <img src="/taxi/images/crysta.jpg" alt="Toyota Innova Crysta premium taxi Munnar – ideal for long distance Kerala trips" class="taxi-img">
           <div class="taxi-details">
-            <h3 class="car">Toyota Crysta (6 Seater)</h3>
-            <p><strong>1km / ₹22 </strong></p>
-            <p class="para">Luxury option with extra comfort and luggage space. Ideal for long hill rides.  🚖 <strong>Traveling with your family or group?</strong>  
+            <h3 class="toggle-header">Toyota Crysta (6 Seater)</h3>
+            <p class="km"><strong>1km / ₹22 </strong></p>
+            <div class="toggle-content">
+                          <p class="hidden-keyword">Luxury option with extra comfort and luggage space. Ideal for long hill rides.  🚖 <strong>Traveling with your family or group?</strong>  
   The <strong>Innova Crysta taxi service</strong> is designed for luxury and long-distance travel.  
   <strong>“How much does Innova Crysta taxi cost per km in Munnar?”</strong> —  
   fares begin at <strong>₹22 per km</strong>.  
   Experience smooth rides, air-conditioned comfort, and professional drivers.</p>
+            </div>
+
           </div>
         </div>
     
@@ -256,13 +307,16 @@
         <div class="taxi-item">
           <img src="/taxi/images/hycros.jpg" alt="Toyota Innova Hycross luxury taxi in Munnar with comfortable seating for hill station rides" class="taxi-img">
           <div class="taxi-details">
-            <h3 class="car">Toyota Hycross (6 Seater)</h3>
-            <p><strong>1km / ₹22 </strong></p>
-            <p class="para">Luxury option with extra comfort and luggage space. Ideal for long hill rides.  🌄 <strong>Want a modern and hybrid taxi option?</strong>  
-  The <strong>Toyota Hycross taxi service</strong> offers a powerful yet fuel-efficient ride in <strong>Munnar</strong>.  
-  Many visitors ask, <strong>“What is the per km rate for Hycross taxi in Kerala?”</strong> —  
-  it starts from <strong>₹20 per km</strong>.  
-  Perfect for premium comfort seekers who want luxury with mileage.</p>
+            <h3 class="toggle-header">Toyota Hycross (6 Seater)</h3>
+            <p class="km"><strong>1km / ₹22 </strong></p>
+            <div class="toggle-content">
+                          <p class="hidden-keyword">Luxury option with extra comfort and luggage space. Ideal for long hill rides. 🌄 <strong>Want a modern and hybrid taxi option?</strong>
+              The <strong>Toyota Hycross taxi service</strong> offers a powerful yet fuel-efficient ride in <strong>Munnar</strong>.
+              Many visitors ask, <strong>“What is the per km rate for Hycross taxi in Kerala?”</strong> —
+              it starts from <strong>₹20 per km</strong>.
+              Perfect for premium comfort seekers who want luxury with mileage.</p>
+            </div>
+
           </div>
         </div>
     
@@ -270,14 +324,17 @@
         <div class="taxi-item">
           <img src="/taxi/images/travalor.jpeg" alt="12/17/24 seater Tempo Traveller Munnar – group taxi rental for sightseeing and Kerala tours" class="taxi-img">
           <div class="taxi-details">
-            <h3 class="car">Force Travalor(12/17 Seater)</h3>
-            <p><strong>1km / ₹30 to 35 rupees </strong></p>
-            <p class="para">Luxury option with extra comfort and luggage space. Ideal for long hill rides.  🚐 <strong>Need a tempo traveller for a big group?</strong>
+            <h3 class="toggle-header">Force Travalor(12/17 Seater)</h3>
+            <p class="km"><strong>1km / ₹30 to 35 rupees </strong></p>
+            <div class="toggle-content">
+                          <p class="hidden-keyword">Luxury option with extra comfort and luggage space. Ideal for long hill rides.  🚐 <strong>Need a tempo traveller for a big group?</strong>
   <strong>Escape Tourism</strong> offers <strong>Traveller taxi service</strong> in <strong>Munnar</strong>
   with seating from 12 to 17 passengers.
   Many ask, <strong>“What is the Traveller taxi rate per km in Kerala?”</strong> —
   it starts from <strong>₹25 per km</strong>.
   Perfect for team tours, school trips, or family holidays across <strong>Kerala</strong> and <strong>Tamil Nadu</strong>.</p>
+            </div>
+
           </div>
         </div>
     
@@ -285,13 +342,16 @@
         <div class="taxi-item">
           <img src="/taxi/images/aurbania.jpeg" alt="Force Urbania luxury van Munnar – spacious tourist vehicle for large family travel in Kerala" class="taxi-img">
           <div class="taxi-details">
-            <h3 class="car">Aurbania (12/16 Seater)</h3>
-            <p><strong>1km / ₹38 to 48 </strong></p>
-            <p class="para">Luxury option with extra comfort and luggage space. Ideal for long hill rides.  🚌 <strong>Planning a group tour or corporate trip?</strong>  
+            <h3 class="toggle-header">Aurbania (12/16 Seater)</h3>
+            <p class="km"><strong>1km / ₹38 to 48 </strong></p>
+            <div class="toggle-content">
+                          <p class="hidden-keyword">Luxury option with extra comfort and luggage space. Ideal for long hill rides.  🚌 <strong>Planning a group tour or corporate trip?</strong>  
   Our <strong>Urbania van service</strong> in <strong>Munnar</strong> is perfect for large groups and families.  
   <strong>“What is the per km rate for Urbania taxi in Kerala?”</strong> —  
   charges start from <strong>₹28 per km</strong>.  
   With luxurious interiors and ample space, it’s ideal for sightseeing and long Kerala road trips.</p>
+            </div>
+
           </div>
         </div>
       </div>
@@ -388,7 +448,7 @@
   
   <!-- COCHIN DIRECTION -->
   <div class="list">
-    <h3 style="color:#7A71FF;" class="toggle-header">Cochin Direction – Munnar Day 1 Sightseeing</h3>
+    <h3 style="color:#42445A;" class="toggle-header">Cochin Direction – Munnar Day 1 Sightseeing</h3>
     <div class="toggle-content">
           <h3 class="hidden-keyword">Munnar local sightseeing taxi rates</h3>  
     <h3 class="hidden-keyword">Best taxi service in Munnar for sightseeing</h3>  
@@ -417,7 +477,7 @@
   
   <!-- THEKKADY DIRECTION -->
   <div class="list">
-    <h3 style="color:#7A71FF;"class="toggle-header">Thekkady Direction – Munnar Day 2 Sightseeing</h3>
+    <h3 style="color:#42445A;"class="toggle-header">Thekkady Direction – Munnar Day 2 Sightseeing</h3>
     <div class="toggle-content">
       <h3 class="hidden-keyword">munnar family tour package</h3>
       <h3 class="hidden-keyword">munnar tour package 2025</h3>
@@ -450,7 +510,7 @@
   
   <!-- MATTUPATTI DIRECTION -->
   <div class="list">
-    <h3 style="color:#7A71FF;"class="toggle-header">Mattupatti Direction – Munnar Day 3 Sightseeing</h3>
+    <h3 style="color:#42445A;"class="toggle-header">Mattupatti Direction – Munnar Day 3 Sightseeing</h3>
     <div class="toggle-content">
       <h3 class="hidden-keyword">munnar honeymoon tour package</h3>
       <h3 class="hidden-keyword">munnar private tour packages</h3>
@@ -477,7 +537,7 @@
   
   <!-- COIMBATORE DIRECTION -->
   <div class="list">
-    <h3 style="color:#7A71FF;"class="toggle-header">Coimbatore Direction – Munnar Day 4 Sightseeing</h3>
+    <h3 style="color:#42445A;"class="toggle-header">Coimbatore Direction – Munnar Day 4 Sightseeing</h3>
     <div class="toggle-content">
       <h3 class="hidden-keyword">munnar extended sightseeing</h3>
       <p class="hidden-keyword">
@@ -536,7 +596,7 @@
   </div>
 
   <div class="list">
-    <h3 style="color:#7A71FF" class="toggle-header">Popular Jeep Safari Destinations in Munnar</h3>
+    <h3 style="color:#42445A" class="toggle-header">Popular Jeep Safari Destinations in Munnar</h3>
     <div class="toggle-content">
       <h3 class="hidden-keyword">Top jeep safari destinations in Munnar</h3>
 <h3 class="hidden-keyword">Kolukkumalai jeep safari</h3>
@@ -627,117 +687,77 @@
   ▶️Book the <strong>best Munnar sightseeing taxi service</strong> and plan 1 to 5-day tours with Escape to Wonder Kerala.
 </a>
 <hr />
-
+      <!-- Why choose us -->
+      <section class="about-sections" id="why">
+        <h2 class="small">Why Book With Us</h2>
+        <ul class="why-book">
+          <li>24/7 phone & WhatsApp support — <a href="tel:+919497665450">+91 9497665450</a></li>
+          <li>Experienced local drivers familiar with Kerala roads and hill routes</li>
+          <li>Transparent fares — no hidden charges</li>
+          <li>Clean, insured vehicles and safety-first approach</li>
+        </ul>
+      </section>
+      
+      <!-- Internal links -->
+      <section class="about-sections" id="related">
+        <h2 class="small">Related Services</h2>
+        <ul class="internal-link">
+          <li><a href="/taxi/taxi(1).html">Munnar Sightseeing taxi service</a></li>
+          <li><a href="/Places to Visit /MUNNAR/Thekkady direction /kolukkumalai/kolukkumalai.html">Kolukkumalai Sunrise Jeep Safari</a></li>
+          <li><a href="/taxi/kerala-taxi-service.html">Kerala Taxi service</a></li>
+          <li><a href="/taxi/airport-transfer.html">Airport pick-up Drop taxi</a></li>
+          <li><a href="/taxi/Cochin-airport-taxi.html">Cochin Airport Taxi services</a></li>
+          <li><a href="#">All Kerala Shightseen points and details with photos</a></li>
+          <li><a href="/taxi/one-way-taxi/">One-way Taxi Services</a></li>
+          <li><a href="/taxi/hill-station-tours/">Hill Station Tours (Munnar, Thekkady)</a></li>
+          <li><a href="/taxi/backwaters-beaches/">Backwaters & Beach Transfers (Alappuzha, Kovalam)</a></li>
+        </ul>
+      </section>
+      <!-- Booking CTA -->
+      <section class="about-sections" id="contact">
+        <h2 class="small">Book Now — Instant Quote & Confirmation</h2>
+        <p class="small">Get an instant rate and confirm your booking via phone or WhatsApp.</p>
+        <p class="small"><strong>Phone:</strong> <a href="tel:+919497665450">+91 9497665450</a> &nbsp; • &nbsp; <strong>WhatsApp:</strong> <a href="https://wa.me/919497665450" target="_blank" rel="noopener">Message on WhatsApp</a></p>
+        <p class="connect"><strong>Email:</strong></p>
+        <p class="connect"><strong>Insat:</strong></p>
+        <p class="connect"><strong>Fb:</strong></p>
+        <div style="margin-top:8px">
+          <a class="cta" href="tel:+919497665450">📞 Call Now</a>
+          <a class="wta" style="margin-left:8px" href="https://wa.me/919497665450">💬 WhatsApp</a>
+        </div>
+        
+        
+      </section>
+      
+      <!-- People also ask -->
+      <section class="about-sections" id="paa">
+        <h2 class="small">People Also Ask — Quick Answers</h2>
+        <div class="small">
+          <strong>Q: How much is Kochi Airport → Munnar taxi?</strong>
+          <p>Indicative sedan fare ~₹2300 one-way. Final price depends on vehicle, stops and season — confirm at booking.</p>
+          
+          <strong>Q: Can I get same-day airport pickup?</strong>
+          <p>Generally yes; for peak season we recommend booking 24–48 hours ahead.</p>
+          
+          <strong>Q: What happens if the flight is delayed?</strong>
+          <p>Provide your flight number — we track arrival times and adjust driver waiting accordingly.</p>
+          
+          <strong>Q: Are group vehicles available?</strong>
+          <p>Yes — Traveller 12/16/24 seater vans available with prior booking.</p>
+        </div>
+      </section>
+      <section>
+        
+      </section>
+      
+      
+      <footer>
+        <p>Back to <a href="/kerala-taxi-service.html">Kerala Taxi Service (Main)</a> • © Escape to Wonder Kerala • <a href="mailto:info@escapetourisms.com">info@escapetourisms.com</a></p>
+      </footer>
   </section>
-    <footer id="footer">
-    <div class="bottom">
-      <h3 class="toggle-header">ABOUT US</h3>
-<div class="toggle-content">
-  <h4>how much for the munnar sightseeing?</h4>
-  <h4>how to book jeep for munnar sightseeing?</h4>
-  <h3 class="hidden-keyword">munnar sightseeing cab booking</h3>
-  <h3 class="hidden-keyword">sightseeing cab munnar</h3>
-  <h3 class="hidden-keyword">taxi booking for sightseeing</h3>
-  <h3 class="hidden-keyword">jeep safari booking in munnar</h3>
-  <h3 class="hidden-keyword">munnar taxi package rates</h3>
-  <h3 class="hidden-keyword">best sightseeing taxi service munnar</h3>
-</div>
-
-<p class="hidden-keyword">
-  🚕 We provide reliable <strong>taxi services</strong> and <strong>off-road jeep safaris</strong>
-  across <strong>Kerala</strong> and <strong>Tamil Nadu</strong>, specializing in
-  <strong>Munnar sightseeing packages</strong> and <strong>Kolukkumalai jeep rides</strong>.
-  Many travelers ask, <strong>“How much for Munnar sightseeing?”</strong> or
-  <strong>“How to book a jeep for Munnar sightseeing?”</strong> —
-  it’s simple with our easy <strong>online cab booking</strong> system.
-  Whether you need a <strong>comfortable taxi</strong> for family trips or a
-  <strong>4x4 jeep safari</strong> for adventure, our local drivers ensure safe, scenic,
-  and budget-friendly rides through the beautiful <strong>tea valleys of Munnar</strong>.
-  <br><br>
-  <strong>(We are doing taxi service and off-road jeep safari in tourism around Kerala and Tamil Nadu.)</strong>
-</p>
-<p id="about">
-  🚕 We offer trusted <strong>Munnar sightseeing taxis</strong> and
-  <strong>off-road jeep safaris</strong> across <strong>Kerala</strong> and
-  <strong>Tamil Nadu</strong>.
-  Book online for <strong>Kolukkumalai jeep rides</strong>, family sightseeing,
-  and customized <strong>tour packages</strong>.
-  Our local drivers ensure a safe, scenic, and affordable experience
-  through the misty hills and <strong>tea gardens of Munnar</strong>.
-</p>
-      <h3 class="toggle-header" id="contact">Contact us</h3>
-      <div class="toggle-content">
-        <h3 class="hidden-keyword">munnar taxi service phone number</h3>
-<h3 class="hidden-keyword">kolukkumalai jeep booking contact</h3>
-<h3 class="hidden-keyword">munnar tour enquiry whatsapp number</h3>
-<h3 class="hidden-keyword">taxi booking contact in munnar</h3>
-<h3 class="hidden-keyword">escape tourism contact munnar</h3>
-<h3 class="hidden-keyword">jeep safari booking number munnar</h3>
-
-  <!-- SEO Boosting Paragraph -->
-  <p class="hidden-keyword">
-    📞 <strong>Contact Escape Tourism</strong> for <strong>Munnar taxi booking</strong>, 
-    <strong>Kolukkumalai jeep safari</strong>, and <strong>room & camping reservations</strong>.  
-    We’re available 24/7 through <strong>WhatsApp</strong> or direct call for quick 
-    <strong>tour package enquiries</strong> across <strong>Kerala</strong> and <strong>Tamil Nadu</strong>.  
-    Trusted by travelers for <strong>safe, affordable, and adventure-filled rides</strong> in 
-    <strong>Munnar</strong> — your next journey starts here!
-  </p>
-      </div>
-      <div class="Box">
-        <p>(24hours services for enquiry)</p>
-        <div id="buttons">
-          <a href="https://wa.me/919497665450?text=Hello%20I%20want%20to%20contact%20you" class="whatsapp" target="_blank">
-            <i class="fab fa-whatsapp"></i> WhatsApp
-          </a>
-          <h3 id="or">or</h3>
-          <a href="tel:+91 9497665450" class="call">
-            <img id="calls" src="/phone-call (5).png">
-            call
-          </a>
-        </div>
-        <h2 id="phno">+91 9497665450</h2>
-        <h4 id="email">escapetowonderkerala@gmail.com</h4>
-        <p>(just click to know taxi,jeep,room,tent stay rent prices details and sightseening package rates and cost) <img class="money" src="/Places to Visit /MUNNAR/money-576443_640.png" alt="munnar tour package price list" /></p>
-        <h3 id="book">Book me for</h3>
-        <div class="icon-box">
-          <img src="/pngs/taxi2.png" alt="munnar taxi booking" />
-          <button class="button">
-            TAXI</button>
-        </div>
-        <div class="icon-box">
-          <img class="jeep" src="/pngs/jeep.png" alt="best jeep safari in munnar" />
-          <button class="button">JEEP SAFARI</button>
-        </div>
-        <div class="icon-box">
-          <img src="/pngs/rooms.png" alt="room booking munnar" />
-          <button class="button">ROOMS & CAMPING</button>
-        </div>
-      </div>
-    </div>
-
-    <div class="office">
-      <h3 id="o">OFFICE</h3>
-      <P id="op">Our office placed in (MUNNAR CHINNAKANAL) near to CLUPMAHINDRA & STERLINK suriyanlli </P>
-    </div>
-    <div class="vehickles">
-      <h3 id="v">VEHICLES</h3>
-      <p id="vp">
-        (we are providing Innova and Crysta & Travler and all types sedan like Etios,Verito,Swift for tour package and pickup & drop)
-      </p>
-      <div class="img">
-        <div class="car" id="crysta"></div>
-        <div class="car" id="innova"></div>
-        <div class="car" id="ertiga"></div>
-        <div class="car" id="travaler"></div>
-        <div class="car" id="etios"></div>
-        <div class="car" id="verito"></div>
-        <div class="car" id="swift"></div>
-      </div>
-    </div>
-  </footer>
+  <script src="toggle-header.js"></script>
   <script src="booknow.js"></script>
-  <script src="taxi.js"></script>
+  <script src="menu-button.js"></script>
 </body>
 
 </html>

@@ -21,6 +21,7 @@
       }
       
    //menu bar   
+   /*
 var menui = document.querySelector(".round");
 var menuItem = document.querySelector(".menu-items");
 var icon = document.querySelector(".icon");
