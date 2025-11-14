@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+  <link rel="stylesheet" href="top-nav-bottom-nav.css">
+  <link rel="stylesheet" href="body.css">
+  <script src="menu-button.js"></script>
+
+</head>
+<body>
+  
+     <nav>
+    <div class="back">
+      <h1>Kerala Taxi Services</h1>
+      <section class="icon">
+        <div class="round"onclick="menu()">
+          <div class="line" style="width:10vw;"></div>
+          <div class="line"style="width:14vw;"></div>
+          <div class="line" style="width:10vw;"></div>
+          <div class="menu-items">
+            <div class="empty"></div>
+            <a class="navlis" href="/index.html">• HOME</a>
+            <a class="navlis" href="#about">• ABOUT</a>
+            <a class="navlis" href="/Places to Visit /weppage.html">• SIGHTSEEING PLACES</a>
+            <a class="navlis"href="/taxi/taxi(1).html">• MUNNAR TAXI</a>
+            <a class="navlis" href="#">• JEEP SAFARI</a>
+            <a class="navlis" href="#">• ROOMS</a>
+            <a class="navlis" href="#">• CAMPING</a>
+            <a href="/gallary.html"> • PHOTOS GALARY</a>
+
+            <a href="/customer reviews.html">• REVIEW</a>
+          </div>
+        </div>
+      </section>
+      
+    </div>
+  </nav>
+  <!-- middle nave page top page down call -->
+
+  <!-- ✅ SEO Optimized Booking Section -->
+<nav class="bottom-nav">
+  <div class="book-box" id="bookBox">
+    <button class="x">×</button>
+
+    <!-- 🔹 SEO-friendly headings -->
+    <h4 class="booking-title">Book Your Munnar Taxi or Tour Package Online</h4>
+    <p class="booking-desc">Select your service, car type, and pickup date to get instant WhatsApp confirmation.</p>
+
+    <label for="drop">Drop</label>
+    <input type="radio" name="service" id="drop" value="Drop" /><br />
+    <label for="pickup">Pickup</label>
+    <input type="radio" name="service" id="pickup" value="Pickup" /><br />
+    <label for="sightseen">Sightseeing</label>
+    <input type="radio" name="service" id="sightseen" value="Sightseeing" /><br />
+    <label for="pkg">Package</label>
+    <input type="radio" name="service" id="pkg" value="Package" /><br />
+
+    <label for="date">Select the Pickup Date:</label>
+    <input type="date" id="date" /><br />
+
+    <h4 class="car-title">Select Your Car Type</h4>
+    <label for="suv">SUV</label>
+    <input type="radio" name="cars" id="suv" value="SUV" /><br />
+    <label for="xuv">XUV</label>
+    <input type="radio" name="cars" id="xuv" value="XUV" /><br />
+
+    <label for="passengers">Passengers</label>
+    <input type="number" id="passengers" placeholder="How many persons?" /><br />
+
+    <p class="note">Please click "Send Enquiry" and our team will contact you soon!</p>
+  </div>
+  <div class="bottom">
+    <button class="book-now" id="bookBtn">BOOK NOW</button>
+    <div class="insta">
+      <img class="instagram"src="/taxi/icons/instagram-png.png" alt="instagram" onclick="openInstagram()"/>
+    </div>
+    <div class="extra">
+      <div class="middle-box">
+      <div class="up" onclick="scrollPage('up')">
+        <div style="border-radius:0 0 18px 18px;" class="left-line"></div>
+        <div style="border-radius:0 0 18px 18px;" class="right-line"></div>
+      </div>
+      <div class="down" onclick="scrollPage('down')">
+        <div style="margin-top:1.8vh;" class="right-line"> </div>
+        <div style="margin-top:1.8vh;" class="left-line"></div>
+      </div>
+      <div class="pngs">
+        <img class="call-png" src="/taxi/icons/call-png.png" alt="call" onclick="makeCall()"/>
+      </div>
+      <div class="pngs"><img class="youtube-png" src="/taxi/icons/youtube-png.png" alt="youtube" onclick="openYouTube()"/>
+      </div>
+    </div>
+    <div class="fb">
+      <img class="facebook"src="/taxi/icons/facebook-png.png" alt="facebook" onclick="openFacebook()"/>
+    </div>
+  </div>
+</nav>
+<script src="toggle-header.js"></script>
+<script src="booknow.js"></script>
+
+</body>
+
+</html>

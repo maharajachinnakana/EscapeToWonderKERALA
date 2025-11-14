@@ -1,0 +1,30 @@
+.header-angor{
+  position: relative;
+  
+}
+.header-angor:nth-child(1){
+  text-decoration:none;
+}
+.hidden-keyword{
+  text-align:center;
+  font-size:20px;
+}
+.angor{
+  margin-top:-10%;
+  text-align:center;
+  color:blue;
+  font-weight:900;
+  font-size:30px;
+  text-decoration:underline;
+}
+.days{
+  border:solid black;
+  width:98vw;
+  margin-left:1vw;
+  margin-bottom:1vh;
+}
+.mobile-rate{
+  border: #8BF2D48F;
+  border-radius:20%;
+  border-width:2px;
+}

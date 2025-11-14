@@ -1,0 +1,32 @@
+.toggle-content{
+  display:none;
+}
+
+.toggle-content.active{
+  display:block;
+}
+.hidden-keyword{
+  font-size:px;
+  color:gray;
+}
+
+.taxi-item{
+  width:98vw;
+  border-radius:65px 8px 8px 65px;
+  border:solid 2px black;
+  margin-left:1vw;
+  display:flex;
+  flex-direction:row;
+  background-color:black;
+  margin-bottom:3vh;
+}
+.taxi-img{
+  width:30vw;
+  height:15vh;
+  border-radius:50%;
+  border:solid 2px black;
+}
+.taxi-details{
+  color:silver;
+  text-align:center;
+}

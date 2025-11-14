@@ -1,0 +1,40 @@
+.about-sections{
+    border:solid 3px black;
+    margin-left:1vw;
+    border-radius:20px;
+    width:98vw;
+}
+
+.internal-link,.why-book,a{
+    text-align:left;
+}
+#contact{
+    
+    padding-bottom:5px;
+}
+
+    .cta,.wta{
+        display:inline-block;
+        padding:10px 14px;
+        color:black;
+        border-radius:8px;
+        text-decoration:none
+        
+    }
+    .cta{
+        background:#ef4444;
+        
+    }
+    .wta{
+        background:#0b8f74
+
+    }
+
+    footer{
+        margin-top:18px;
+        text-align:center;
+        color:#64748b;
+        font-size:0.9rem;
+    }
+    a{color:#0b72b5}
+    
