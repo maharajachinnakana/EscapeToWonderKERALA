@@ -1,13 +1,60 @@
 h2{
   font-weight:900;
+  color:black;
+}
+.adds {
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
 }
 
+.add {
+  min-width: 100vw; /* One card full screen */
+  scroll-snap-align: start;
+}
+
+.add-img {
+  width: 100%;
+  height: ;
+  object-fit:contain;
+}
+/* Scrollbar Full Bar */
+.adds::-webkit-scrollbar {
+  height: 8px;              /* Scrollbar width */
+}
+
+/* Scrollbar Background Track */
+.adds::-webkit-scrollbar-track {
+  background: #e0e0e0;      /* Track color */
+  border-radius: 10px;      /* Round corners */
+}
+
+/* Scrollbar Moving Thumb */
+.adds::-webkit-scrollbar-thumb {
+  background-color: #6b6b6b;  /* Thumb color */
+  border-radius: 10px;        /* Thumb border radius */
+}
+
+/* Hover Effect */
+.adds::-webkit-scrollbar-thumb:hover {
+  background-color: #444;     /* Darker color on hover */
+}
+
+/* For Firefox */
+.adds {
+  scrollbar-width: thin;            /* Width */
+  scrollbar-color: #6b6b6b #e0e0e0; /* thumb color | track color */
+}
 .list{
   width:98vw;
   border:solid 2px black;
   border-radius:25px;
   margin-left:1vw;
   margin-bottom:2px;
+  font-size:20px;
 }
 .taxi-sightseening-section{
   width:98vw;

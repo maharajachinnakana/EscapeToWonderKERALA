@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Thekkady Pick & Drop Taxi Service | Hotel, Station & Local Transfers</title>
+<meta name="description" content="Thekkady pick and drop taxi service for hotels, resorts, bus stand, railway station, nearby towns and tourist locations. Safe, affordable and on-time taxi service.">
+<meta name="keywords" content="Thekkady pick and drop taxi, hotel pickup Thekkady, drop taxi Kumily, local transfer taxi Thekkady, station pickup Thekkady">
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "TaxiService",
+    "name": "Thekkady Pick & Drop Taxi Service",
+    "telephone": "+91 9497665450",
+    "serviceType": "Local Pick and Drop Taxi",
+    "areaServed": ["Thekkady", "Kumily", "Periyar"],
+    "provider": {
+      "@type": "LocalBusiness",
+      "name": "Escap to Wonder Kerala"
+    }
+  }
+</script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-2D2GY798CT">
+</script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-2D2GY798CT');
+</script>
+          <!-- 🔹 Stylesheets -->
+      <link rel="stylesheet" href="top-nav-bottom-nav.css" />
+      <link rel="stylesheet" href="body.css" />
+      <link rel="stylesheet" href="about.css" />
+      <link rel="stylesheet" href="kerala-taxi-service.css" />
+      <link rel="stylesheet" href="thekkady-sightseening-taxi.css">
+      <link rel="stylesheet" href="toggle-content.css" />
+      
+      <!-- 🔹 Scripts -->
+      <script src="/ga-init.js" defer></script>
+      <script src="menu-button.js" defer></script>
+</head>
+
+<body>
+         <nav>
+         <div class="back">
+           <h2 class="nav-heading">Pickup&Drop Taxi</h2>
+           <section class="icon">
+             <div class="round" onclick="menu()">
+               <div class="line" style="width:10vw;"></div>
+               <div class="line" style="width:14vw;"></div>
+               <div class="line" style="width:10vw;"></div>
+               <div class="menu-items">
+                 <div class="empty"></div>
+                 <a class="navlis" href="/index.html">• HOME</a>
+                 <a class="navlis" href="#about">• ABOUT</a>
+                 <a class="navlis" href="/Places to Visit /weppage.html">• SIGHTSEEING PLACES</a>
+                 <a class="navlis" href="/taxi/taxi(1).html">• MUNNAR TAXI</a>
+                 <a class="navlis" href="#">• JEEP SAFARI</a>
+                 <a class="navlis" href="#">• ROOMS</a>
+                 <a class="navlis" href="#">• CAMPING</a>
+                 <a href="/gallary.html"> • PHOTOS GALARY</a>
+                 
+                 <a href="/customer reviews.html">• REVIEW</a>
+               </div>
+             </div>
+           </section>
+           
+         </div>
+       </nav>
+       <!-- middle nave page top page down call -->
+       
+       <!-- ✅ SEO Optimized Booking Section -->
+       <nav class="bottom-nav">
+         <div class="book-box" id="bookBox">
+           <button class="x">×</button>
+           
+           <!-- 🔹 SEO-friendly headings -->
+           <h4 class="booking-title">Book Your taxi to or from thekkady Online</h4>
+           <p class="booking-desc">Select your service, car type, and pickup date to get instant WhatsApp confirmation.</p>
+           
+           <label for="drop">Drop</label>
+           <input type="radio" name="service" id="drop" value="Drop" /><br />
+           <label for="pickup">Pickup</label>
+           <input type="radio" name="service" id="pickup" value="Pickup" /><br />
+           <label for="sightseen">Sightseeing</label>
+           <input type="radio" name="service" id="sightseen" value="Sightseeing" /><br />
+           <label for="pkg">Package</label>
+           <input type="radio" name="service" id="pkg" value="Package" /><br />
+           
+           <label for="date">Select the Pickup Date:</label>
+           <input type="date" id="date" /><br />
+           
+           <h4 class="car-title">Select Your Car Type</h4>
+           <label for="suv">SUV</label>
+           <input type="radio" name="cars" id="suv" value="SUV" /><br />
+           <label for="xuv">XUV</label>
+           <input type="radio" name="cars" id="xuv" value="XUV" /><br />
+           
+           <label for="passengers">Passengers</label>
+           <input type="number" id="passengers" placeholder="How many persons?" /><br />
+           
+           <p class="note">Please click "Send Enquiry" and our team will contact you soon!</p>
+         </div>
+         <div class="bottom">
+           <button class="book-now" id="bookBtn">BOOK NOW</button>
+           <div class="insta">
+             <img class="instagram" src="/taxi/icons/instagram-png.png" alt="instagram" onclick="openInstagram()" />
+           </div>
+           <div class="extra">
+             <div class="middle-box">
+               <div class="up" onclick="scrollPage('up')">
+                 <div style="border-radius:0 0 18px 18px;" class="left-line"></div>
+                 <div style="border-radius:0 0 18px 18px;" class="right-line"></div>
+               </div>
+               <div class="down" onclick="scrollPage('down')">
+                 <div style="margin-top:1.8vh;" class="right-line"> </div>
+                 <div style="margin-top:1.8vh;" class="left-line"></div>
+               </div>
+               <div class="pngs">
+                 <img class="call-png" src="/taxi/icons/call-png.png" alt="call" onclick="makeCall()" />
+               </div>
+               <div class="pngs"><img class="youtube-png" src="/taxi/icons/youtube-png.png" alt="youtube" onclick="openYouTube()" />
+               </div>
+             </div>
+             <div class="fb">
+               <img class="facebook" src="/taxi/icons/facebook-png.png" alt="facebook" onclick="openFacebook()" />
+             </div>
+           </div>
+       </nav>
+       <h2 style="color:orange;margin-top: 10vh;" class="toggle-header">Escape Tourisms</h2>
+       <div class="toggle-content" area-hidden="true">
+         <h3 class="hidden-keyword">Thekkady pick and drop taxi</h3>
+<h3 class="hidden-keyword">Hotel pickup taxi Thekkady</h3>
+<h3 class="hidden-keyword">Local transfer taxi Kumily</h3>
+<h3 class="hidden-keyword">Drop taxi service Thekkady</h3>
+<h3 class="hidden-keyword">24x7 pick and drop taxi Thekkady</h3>
+       </div>
+       <h1 class="h2">Thekkady Pick & Drop Taxi Service</h1>
+
+<p>
+  Looking for a reliable pick and drop taxi in Thekkady or Kumily? We provide fast and affordable taxi services
+  for hotel pickup, resort drop, bus stand transfers, nearby town travel, and tourist location drop-offs.
+  Our local drivers ensure safe, on-time, and comfortable travel with clean AC vehicles and flexible timings.
+</p>
+
+       <div class="a-box">
+         <p style="color:; text-align:center; font-size:15px; margin-top:10px;">
+           24×7 <strong>Munnar taxi booking</strong> available – fixed rates, verified drivers, and instant WhatsApp booking for your Kerala trip.
+         </p>
+         <p>whatsapp:<a href="https://wa.me/919497665450?text=Hello%20sir%20i%20saw%20your%20no%20from%20in%20thekkady%20sightseeing%20taxi%20service,I%20need%20help%20with%20you%20for%20our%20tour">+91 9497665450</a>
+           
+         </p>
+         <a class="a-call" href="tel:+919497665450">📲📞Call now to get best offers </a>
+       </div>
+       <hr />
+<!-- ===== Pick & Drop Services Section ===== -->
+<section class="service-section">
+  <h2>Pick & Drop Taxi Services from Thekkady</h2>
+  <p>
+    We provide reliable long-distance and local pick & drop taxi services from Thekkady to airports,
+    railway stations, hill stations, tourist destinations, and nearby towns with comfortable vehicles
+    and experienced drivers.
+  </p>
+
+  <ul class="service-list">
+    <!-- Airport Transfers -->
+    <li><strong>Airport Drop & Pickup:</strong> Cochin Airport (COK), Trivandrum Airport (TRV), Calicut Airport (CCJ)</li>
+
+    <!-- Railway Stations -->
+    <li><strong>Railway Station Transfers:</strong> Aluva, Ernakulam Junction (South & North), Alappuzha, Kollam, Pathanamthitta, Trivandrum</li>
+
+    <!-- Nearby States & Towns -->
+    <li><strong>Interstate & Nearby Town Drops:</strong> Theni, Cumbum, Kambam</li>
+
+    <!-- Hill Stations & Tourist Places -->
+    <li><strong>Hill Stations & Tourist Destinations:</strong> Munnar, Alappuzha, Kumarakom, Athirappilly Waterfalls</li>
+
+    <!-- Premium Tourist Routes -->
+    <li><strong>Special Tourist Routes:</strong> Varkala, Ashtamudi Lake, Jatayu Earth’s Center, Cochin City</li>
+
+    <!-- Local & Hotel Transfers -->
+    <li><strong>Local Pick & Drop:</strong> Thekkady, Kumily, hotels, resorts, homestays & tourist spots</li>
+  </ul>
+</section>
+
+<!-- ===== CSS for Section 4 ===== -->
+<style>
+  .service-section {
+    padding: 40px 20px;
+    background: #f9fcff;
+    margin: 50px 0;
+    border-radius: 12px;
+  }
+
+  .service-section h2 {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 12px;
+    color: #222;
+  }
+
+  .service-section p {
+    max-width: 900px;
+    margin: 0 auto 25px auto;
+    text-align: center;
+    color: #555;
+    font-size: 16px;
+    line-height: 1.6;
+  }
+
+  .service-list {
+    max-width: 900px;
+    margin: auto;
+    list-style: none;
+    padding: 0;
+    font-size: 16px;
+    color: #444;
+  }
+
+  .service-list li {
+    background: #ffffff;
+    border: 1px solid #e3ebff;
+    padding: 14px 16px;
+    border-radius: 8px;
+    margin-bottom: 12px;
+    line-height: 1.5;
+  }
+
+  @media (max-width: 600px) {
+    .service-section h2 {
+      font-size: 24px;
+    }
+    .service-section p,
+    .service-list li {
+      font-size: 15px;
+    }
+  }
+</style>
+
+<!-- ===== Popular Pick & Drop Routes Section ===== -->
+<section class="routes-section">
+  <h2>Popular Pick & Drop Routes from Thekkady</h2>
+
+  <ul class="routes-list">
+    <li>Thekkady ⇄ Cochin (Kochi)</li>
+    <li>Thekkady ⇄ Munnar</li>
+    <li>Thekkady ⇄ Alappuzha (Alleppey)</li>
+    <li>Thekkady ⇄ Ashtamudi Lake</li>
+    <li>Thekkady ⇄ Trivandrum</li>
+    <li>Thekkady ⇄ Ernakulam (City & Railway Station)</li>
+  </ul>
+</section>
+
+<!-- ===== CSS (if not already added) ===== -->
+<style>
+  .routes-section {
+    padding: 40px 20px;
+    background: #ffffff;
+    margin: 40px 0;
+  }
+
+  .routes-section h2 {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #222;
+  }
+
+  .routes-list {
+    max-width: 700px;
+    margin: auto;
+    list-style: none;
+    padding: 0;
+    font-size: 16px;
+    color: #444;
+  }
+
+  .routes-list li {
+    background: #f7faff;
+    border: 1px solid #e3ebff;
+    padding: 14px 18px;
+    border-radius: 8px;
+    margin-bottom: 12px;
+    text-align: center;
+    font-weight: 500;
+  }
+
+  @media (max-width: 600px) {
+    .routes-section h2 {
+      font-size: 24px;
+    }
+    .routes-list li {
+      font-size: 15px;
+    }
+  }
+</style>
+<!-- ===== Why Choose Us Section ===== -->
+<section class="offer-section">
+  <h2>Why Choose Our Pick & Drop Taxi Service?</h2>
+
+  <ul class="offer-list">
+    <li>✔ Airport, Railway & Long-Distance Transfers Available</li>
+    <li>✔ Experienced Drivers for Hills & Long Routes</li>
+    <li>✔ Clean, Comfortable & Well-Maintained Vehicles</li>
+    <li>✔ Transparent & Affordable Pricing</li>
+    <li>✔ 24/7 Pickup & Drop from Thekkady</li>
+    <li>✔ Safe & Reliable for Families, Tourists & Groups</li>
+  </ul>
+</section>
+
+<!-- ===== CSS (if not already added) ===== -->
+<style>
+  .offer-section {
+    padding: 40px 20px;
+    background: #f7faff;
+    margin: 40px 0;
+    border-radius: 12px;
+  }
+
+  .offer-section h2 {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #222;
+  }
+
+  .offer-list {
+    max-width: 700px;
+    margin: auto;
+    list-style: none;
+    padding: 0;
+    font-size: 16px;
+    color: #444;
+  }
+
+  .offer-list li {
+    background: #ffffff;
+    border: 1px solid #e3ebff;
+    padding: 14px 18px;
+    border-radius: 8px;
+    margin-bottom: 12px;
+    font-weight: 500;
+    text-align: center;
+  }
+
+  @media (max-width: 600px) {
+    .offer-section h2 {
+      font-size: 24px;
+    }
+    .offer-list li {
+      font-size: 15px;
+    }
+  }
+</style>
+    <h3>About Us</h3>
+    <!-- Why choose us -->
+    <section class="about-sections" id="why">
+      <h2 class="small">Why Book With Us</h2>
+      <ul class="why-book">
+        <li>24/7 phone & WhatsApp support — <a href="tel:+919497665450">+91 9497665450</a></li>
+        <li>Experienced local drivers familiar with Kerala roads and hill routes</li>
+        <li>Transparent fares — no hidden charges</li>
+        <li>Clean, insured vehicles and safety-first approach</li>
+        <li>kerala online taxi booking-pockup and drop, sightseeing,tour packages</li>
+        <li>kerala taxi service with driver - all over kerala and tamilnadu</li>
+      </ul>
+    </section>
+    
+    <!-- Internal links -->
+    <section class="about-sections" id="related">
+      <h2 class="small">Related Services</h2>
+      <ul class="internal-link">
+        <li><a href="/taxi/taxi(1).html">Munnar Sightseeing taxi service</a></li>
+        <li><a href="/Places to Visit /MUNNAR/Thekkady direction /kolukkumalai/kolukkumalai.html">Kolukkumalai Sunrise Jeep Safari</a></li>
+        <li><a href="/taxi/kerala-taxi-service.html">Kerala Taxi service</a></li>
+        <li><a href="/taxi/airport-transfer.html">Airport pick-up Drop taxi</a></li>
+        <li><a href="/taxi/Cochin-airport-taxi.html">Cochin Airport Taxi services</a></li>
+        <li><a href="#">All Kerala Shightseen points and details with photos</a></li>
+        <li><a href="/taxi/one-way-taxi/">One-way Taxi Services</a></li>
+        <li><a href="/taxi/hill-station-tours/">Hill Station Tours (Munnar, Thekkady)</a></li>
+        <li><a href="/taxi/backwaters-beaches/">Backwaters & Beach Transfers (Alappuzha, Kovalam)</a></li>
+      </ul>
+    </section>
+    <!-- Booking CTA -->
+    <section class="about-sections" id="contact">
+      <h2 class="small">Book Now — Instant Quote & Confirmation</h2>
+      <p class="small">Get an instant rate and confirm your booking via phone or WhatsApp.</p>
+      <p class="small"><strong>Phone:</strong> <a href="tel:+919497665450">+91 9497665450</a> &nbsp; • &nbsp; <strong>WhatsApp:</strong> <a href="https://wa.me/919497665450" target="_blank" rel="noopener">Message on WhatsApp</a></p>
+      <p class="connect"><strong>Email:<a href="mailto:escapetowonderkerala@gmail.com">escapetowonderkerala@gmail.com</a></strong></p>
+      <p class="connect"><strong>Insat:<a href="https://www.instagram.com/escape_tourisms?igsh=bjIxNnlnNnlxOWJ5">@Escape_Tourisms</a></strong></p>
+      <p class="connect"><strong>Fb:<a href="https://www.facebook.com/share/172xqhBmtk/">Escape Tourisms facebook page</a></strong></p>
+      <div style="margin-top:8px">
+        <a class="cta" href="tel:+919497665450">📞 Call Now</a>
+        <a class="wta" style="margin-left:8px" href="https://wa.me/919497665450">💬 WhatsApp</a>
+      </div>
+      
+      
+    </section>
+
+
+    <!-- People also ask -->
+    <section class="about-sections" id="paa">
+      <h2 class="small">People Also Ask — Kerala Taxi Service</h2>
+      <div class="small">
+            <h2>Pick & Drop Taxi – FAQ</h2>
+
+            <p><strong>Q: Do you provide hotel pickup?</strong><br>
+  Yes, we provide doorstep pickup from all hotels and resorts.</p>
+
+<p><strong>Q: Is night pickup available?</strong><br>
+  Yes, our pick and drop taxi service is available 24/7.</p>
+
+<p><strong>Q: Can I book instantly?</strong><br>
+  Yes, call or WhatsApp us for instant booking.</p>
+
+<p><strong>Q: Are fares fixed?</strong><br>
+  Local fares are affordable and shared before confirming the ride.</p>
+    
+
+        
+      </div>
+    </section>
+    <section class="adds">
+      <div class="add">
+        <h2 class="add-heading">Swift Tour</h2>
+        <img class="add-img" src="/taxi/images/swift.jpg" alt="" />
+        
+      </div>
+      <div class="add">
+        <h2 class="add-heading">Toyata Etios</h2>
+        <img class="add-img" src="/taxi/images/etios.jpeg" alt="" />
+        
+      </div>
+      <div class="add">
+        <h2 class="add-heading">Ertiga</h2>
+        <img class="add-img" src="/taxi/images/ertiga.jpg" alt="" />
+        
+      </div>
+      
+      <div class="add">
+        <h2 class="add-heading">Innova</h2>
+        <img class="add-img" src="/taxi/images/innova.jpg" alt="" />
+        
+      </div>
+      <div class="add">
+        <h2 class="add-heading">Innova Crista</h2>
+        <img class="add-img" src="/taxi/images/crysta.jpg" alt="" />
+        
+      </div>
+      <div class="add">
+        <h2 class="add-heading">Innova Hycros</h2>
+        <img class="add-img" src="/taxi/images/hycros.jpg" alt="" />
+        
+      </div>
+      <div class="add">
+        <h2 class="add-heading">Force Travalar</h2>
+        <img class="add-img" src="/taxi/images/travalor.jpeg" alt="" />
+        
+      </div>
+      <div class="add">
+        <h2 class="add-heading">Urbania</h2>
+        <img class="add-img" src="/taxi/images/urbania.jpeg" alt="" />
+        
+      </div>
+    </section>
+    
+    
+    <footer>
+      <p>Back to <a href="/kerala-taxi-service.html">Kerala Taxi Service (Main)</a> • © Escape to Wonder Kerala • <a href="mailto:escapetowonderkerala@gmail.com">escapetowonderkerala@gmail.com</a></p>
+    </footer>
+    <script src="toggle-header.js"></script>
+    
+    <script src="booknow.js"></script>
+    <script src="auto-scroll.js"></script>
+</body>
+
+</html>

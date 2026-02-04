@@ -9,7 +9,7 @@ nav{
   justify-content:right;
   top:2px;
 }
-   h1{
+   .nav-heading{
     font-weight:900;
     font-size:25px;
     margin-right:17vw;
@@ -33,7 +33,7 @@ nav{
   }
     .icon{
       position: relative;
-      margin-top:-5.7vh;
+      margin-top:-6.2vh;
       z-index:1;
     }
     .round{

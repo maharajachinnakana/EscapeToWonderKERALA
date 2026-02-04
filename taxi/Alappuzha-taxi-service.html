@@ -11,115 +11,115 @@
 </head>
 
 <body>
-     <nav>
-    <div class="back">
-      <h1>Kerala Taxi Services</h1>
-      <section class="icon">
-        <div class="round"onclick="menu()">
-          <div class="line" style="width:10vw;"></div>
-          <div class="line"style="width:14vw;"></div>
-          <div class="line" style="width:10vw;"></div>
-          <div class="menu-items">
-            <div class="empty"></div>
-            <a class="navlis" href="/index.html">• HOME</a>
-            <a class="navlis" href="#about">• ABOUT</a>
-            <a class="navlis" href="/Places to Visit /weppage.html">• SIGHTSEEING PLACES</a>
-            <a class="navlis"href="/taxi/taxi(1).html">• MUNNAR TAXI</a>
-            <a class="navlis" href="#">• JEEP SAFARI</a>
-            <a class="navlis" href="#">• ROOMS</a>
-            <a class="navlis" href="#">• CAMPING</a>
-            <a href="/gallary.html"> • PHOTOS GALARY</a>
-
-            <a href="/customer reviews.html">• REVIEW</a>
+       <nav>
+      <div class="back">
+        <h1>Kerala Taxi Services</h1>
+        <section class="icon">
+          <div class="round"onclick="menu()">
+            <div class="line" style="width:10vw;"></div>
+            <div class="line"style="width:14vw;"></div>
+            <div class="line" style="width:10vw;"></div>
+            <div class="menu-items">
+              <div class="empty"></div>
+              <a class="navlis" href="/index.html">• HOME</a>
+              <a class="navlis" href="#about">• ABOUT</a>
+              <a class="navlis" href="/Places to Visit /weppage.html">• SIGHTSEEING PLACES</a>
+              <a class="navlis"href="/taxi/taxi(1).html">• MUNNAR TAXI</a>
+              <a class="navlis" href="#">• JEEP SAFARI</a>
+              <a class="navlis" href="#">• ROOMS</a>
+              <a class="navlis" href="#">• CAMPING</a>
+              <a href="/gallary.html"> • PHOTOS GALARY</a>
+  
+              <a href="/customer reviews.html">• REVIEW</a>
+            </div>
           </div>
+        </section>
+        
+      </div>
+    </nav>
+    <!-- middle nave page top page down call -->
+  
+    <!-- ✅ SEO Optimized Booking Section -->
+  <nav class="bottom-nav">
+    <div class="book-box" id="bookBox">
+      <button class="x">×</button>
+  
+      <!-- 🔹 SEO-friendly headings -->
+      <h4 class="booking-title">Book Your Munnar Taxi or Tour Package Online</h4>
+      <p class="booking-desc">Select your service, car type, and pickup date to get instant WhatsApp confirmation.</p>
+  
+      <label for="drop">Drop</label>
+      <input type="radio" name="service" id="drop" value="Drop" /><br />
+      <label for="pickup">Pickup</label>
+      <input type="radio" name="service" id="pickup" value="Pickup" /><br />
+      <label for="sightseen">Sightseeing</label>
+      <input type="radio" name="service" id="sightseen" value="Sightseeing" /><br />
+      <label for="pkg">Package</label>
+      <input type="radio" name="service" id="pkg" value="Package" /><br />
+  
+      <label for="date">Select the Pickup Date:</label>
+      <input type="date" id="date" /><br />
+  
+      <h4 class="car-title">Select Your Car Type</h4>
+      <label for="suv">SUV</label>
+      <input type="radio" name="cars" id="suv" value="SUV" /><br />
+      <label for="xuv">XUV</label>
+      <input type="radio" name="cars" id="xuv" value="XUV" /><br />
+  
+      <label for="passengers">Passengers</label>
+      <input type="number" id="passengers" placeholder="How many persons?" /><br />
+  
+      <p class="note">Please click "Send Enquiry" and our team will contact you soon!</p>
+    </div>
+    <div class="bottom">
+      <button class="book-now" id="bookBtn">BOOK NOW</button>
+      <div class="insta">
+        <img class="instagram"src="/taxi/icons/instagram-png.png" alt="instagram" onclick="openInstagram()"/>
+      </div>
+      <div class="extra">
+        <div class="middle-box">
+        <div class="up" onclick="scrollPage('up')">
+          <div style="border-radius:0 0 18px 18px;" class="left-line"></div>
+          <div style="border-radius:0 0 18px 18px;" class="right-line"></div>
         </div>
-      </section>
-      
+        <div class="down" onclick="scrollPage('down')">
+          <div style="margin-top:1.8vh;" class="right-line"> </div>
+          <div style="margin-top:1.8vh;" class="left-line"></div>
+        </div>
+        <div class="pngs">
+          <img class="call-png" src="/taxi/icons/call-png.png" alt="call" onclick="makeCall()"/>
+        </div>
+        <div class="pngs"><img class="youtube-png" src="/taxi/icons/youtube-png.png" alt="youtube" onclick="openYouTube()"/>
+        </div>
+      </div>
+      <div class="fb">
+        <img class="facebook"src="/taxi/icons/facebook-png.png" alt="facebook" onclick="openFacebook()"/>
+      </div>
     </div>
   </nav>
-  <!-- middle nave page top page down call -->
-
-  <!-- ✅ SEO Optimized Booking Section -->
-<nav class="bottom-nav">
-  <div class="book-box" id="bookBox">
-    <button class="x">×</button>
-
-    <!-- 🔹 SEO-friendly headings -->
-    <h4 class="booking-title">Book Your Munnar Taxi or Tour Package Online</h4>
-    <p class="booking-desc">Select your service, car type, and pickup date to get instant WhatsApp confirmation.</p>
-
-    <label for="drop">Drop</label>
-    <input type="radio" name="service" id="drop" value="Drop" /><br />
-    <label for="pickup">Pickup</label>
-    <input type="radio" name="service" id="pickup" value="Pickup" /><br />
-    <label for="sightseen">Sightseeing</label>
-    <input type="radio" name="service" id="sightseen" value="Sightseeing" /><br />
-    <label for="pkg">Package</label>
-    <input type="radio" name="service" id="pkg" value="Package" /><br />
-
-    <label for="date">Select the Pickup Date:</label>
-    <input type="date" id="date" /><br />
-
-    <h4 class="car-title">Select Your Car Type</h4>
-    <label for="suv">SUV</label>
-    <input type="radio" name="cars" id="suv" value="SUV" /><br />
-    <label for="xuv">XUV</label>
-    <input type="radio" name="cars" id="xuv" value="XUV" /><br />
-
-    <label for="passengers">Passengers</label>
-    <input type="number" id="passengers" placeholder="How many persons?" /><br />
-
-    <p class="note">Please click "Send Enquiry" and our team will contact you soon!</p>
+  <h2 style="color:orange;margin-top: 10vh;" class="toggle-header">Escape Tourisms</h2>
+  <div class="toggle-content" area-hidden="true">
+    <h3 class="hidden-keyword">All Kerala Taxi Service for Sightseeing & Tour Packages</h3>
+    <h3 class="hidden-keyword">Munnar to All Kerala Taxi Booking with Driver</h3>
+    <h3 class="hidden-keyword">Kerala Cab Rental for Family & Group Travelers</h3>
+    <h3 class="hidden-keyword">Affordable Kerala Taxi Fare with 24x7 Support</h3>
+    <h3 class="hidden-keyword">Book One Way Taxi Service from Kerala to Tamil Nadu</h3>
+    <h3 class="hidden-keyword">Kerala Airport Transfers – Kochi, Trivandrum, Calicut</h3>
+    <h3 class="hidden-keyword">Best Taxi in Kerala for Multi-Day Tour Packages</h3>
+    <h3 class="hidden-keyword">Kerala Sightseeing Cabs for Munnar, Thekkady & Alappuzha</h3>
+    <h3 class="hidden-keyword">Safe & Reliable Kerala Taxi Drivers for Tourists</h3>
+    <h3 class="hidden-keyword">Book Kerala Taxi Online with Escape Tourisms</h3>
+    
   </div>
-  <div class="bottom">
-    <button class="book-now" id="bookBtn">BOOK NOW</button>
-    <div class="insta">
-      <img class="instagram"src="/taxi/icons/instagram-png.png" alt="instagram" onclick="openInstagram()"/>
-    </div>
-    <div class="extra">
-      <div class="middle-box">
-      <div class="up" onclick="scrollPage('up')">
-        <div style="border-radius:0 0 18px 18px;" class="left-line"></div>
-        <div style="border-radius:0 0 18px 18px;" class="right-line"></div>
-      </div>
-      <div class="down" onclick="scrollPage('down')">
-        <div style="margin-top:1.8vh;" class="right-line"> </div>
-        <div style="margin-top:1.8vh;" class="left-line"></div>
-      </div>
-      <div class="pngs">
-        <img class="call-png" src="/taxi/icons/call-png.png" alt="call" onclick="makeCall()"/>
-      </div>
-      <div class="pngs"><img class="youtube-png" src="/taxi/icons/youtube-png.png" alt="youtube" onclick="openYouTube()"/>
-      </div>
-    </div>
-    <div class="fb">
-      <img class="facebook"src="/taxi/icons/facebook-png.png" alt="facebook" onclick="openFacebook()"/>
-    </div>
   </div>
-</nav>
-<h2 style="color:orange;margin-top: 10vh;" class="toggle-header">Escape Tourisms</h2>
-<div class="toggle-content" area-hidden="true">
-  <h3 class="hidden-keyword">All Kerala Taxi Service for Sightseeing & Tour Packages</h3>
-  <h3 class="hidden-keyword">Munnar to All Kerala Taxi Booking with Driver</h3>
-  <h3 class="hidden-keyword">Kerala Cab Rental for Family & Group Travelers</h3>
-  <h3 class="hidden-keyword">Affordable Kerala Taxi Fare with 24x7 Support</h3>
-  <h3 class="hidden-keyword">Book One Way Taxi Service from Kerala to Tamil Nadu</h3>
-  <h3 class="hidden-keyword">Kerala Airport Transfers – Kochi, Trivandrum, Calicut</h3>
-  <h3 class="hidden-keyword">Best Taxi in Kerala for Multi-Day Tour Packages</h3>
-  <h3 class="hidden-keyword">Kerala Sightseeing Cabs for Munnar, Thekkady & Alappuzha</h3>
-  <h3 class="hidden-keyword">Safe & Reliable Kerala Taxi Drivers for Tourists</h3>
-  <h3 class="hidden-keyword">Book Kerala Taxi Online with Escape Tourisms</h3>
-  
-</div>
-</div>
-<h2 class="h2">All Kerala Taxi Service for Sightseeing & Tour Packages</h2>
-<p class="top-para">Our taxis are available across all major tourist spots in Kerala...</p>
-<p class="top-para">
-  Escape Tourisms offers the best <strong>Kerala taxi service</strong> for tourists who wish to explore every corner of the state — from <strong>Munnar, Thekkady, Vagamon, Alappuzha, Kochi, Wayanad, Varkala, Kumarakom, Poovar, Jattayu, Arookuty, Athirapalli Waterfall and Kovalam</strong> to the misty hill stations and serene backwaters. We provide <strong>all-Kerala cab booking</strong> for airport transfers, sightseeing, and multi-day tour packages at affordable rates. Whether you need a <strong>one-way taxi in Kerala</strong> or a <strong>round trip cab with driver</strong>, our vehicles include <strong>Sedan, SUV, Innova, Crysta, and Traveller</strong> for family, couples, and group travel. Tourists often ask — “What is the best way to travel around Kerala?”, “How much does a Kerala taxi cost per km?”, or “Can I book a taxi from Kerala to Tamil Nadu?” — and the answer is simple: <strong>Escape Tourisms provides 24x7 reliable Kerala taxi booking</strong> with safe drivers, clean vehicles, and transparent fares. Book online now to make your Kerala trip comfortable and memorable.
-</p>
-<div class="a-box">
-  <p style="color:; text-align:center; font-size:15px; margin-top:10px;">
-    24×7 <strong>Munnar taxi booking</strong> available – fixed rates, verified drivers, and instant WhatsApp booking for your Kerala trip.
+  <h2 class="h2">All Kerala Taxi Service for Sightseeing & Tour Packages</h2>
+  <p class="top-para">Our taxis are available across all major tourist spots in Kerala...</p>
+  <p class="top-para">
+    Escape Tourisms offers the best <strong>Kerala taxi service</strong> for tourists who wish to explore every corner of the state — from <strong>Munnar, Thekkady, Vagamon, Alappuzha, Kochi, Wayanad, Varkala, Kumarakom, Poovar, Jattayu, Arookuty, Athirapalli Waterfall and Kovalam</strong> to the misty hill stations and serene backwaters. We provide <strong>all-Kerala cab booking</strong> for airport transfers, sightseeing, and multi-day tour packages at affordable rates. Whether you need a <strong>one-way taxi in Kerala</strong> or a <strong>round trip cab with driver</strong>, our vehicles include <strong>Sedan, SUV, Innova, Crysta, and Traveller</strong> for family, couples, and group travel. Tourists often ask — “What is the best way to travel around Kerala?”, “How much does a Kerala taxi cost per km?”, or “Can I book a taxi from Kerala to Tamil Nadu?” — and the answer is simple: <strong>Escape Tourisms provides 24x7 reliable Kerala taxi booking</strong> with safe drivers, clean vehicles, and transparent fares. Book online now to make your Kerala trip comfortable and memorable.
+  </p>
+  <div class="a-box">
+    <p style="color:; text-align:center; font-size:15px; margin-top:10px;">
+      24×7 <strong>Munnar taxi booking</strong> available – fixed rates, verified drivers, and instant WhatsApp booking for your Kerala trip.
   </p>
   <a class="a-call" href="tel:+919497665450">📲📞Call now to get best offers </a>
 </div>
@@ -130,3 +130,380 @@
 </body>
 
 </html>
+
+  <footer id="footer">
+    <hr>
+    <div class="bottom">
+      <h3 class="toggle-header">ABOUT US</h3>
+      <div class="toggle-content">
+        
+        <!-- 🔑 Top Hot Hidden Keywords -->
+        <h3 class="hidden-keyword">Kolukkumalai jeep safari booking</h3>
+        <h3 class="hidden-keyword">how to book Kolukkumalai jeep online</h3>
+        <h3 class="hidden-keyword">Kolukkumalai jeep safari price</h3>
+        <h3 class="hidden-keyword">best jeep safari in Munnar</h3>
+        <h3 class="hidden-keyword">off-road jeep safari Munnar</h3>
+        <h3 class="hidden-keyword">Kolukkumalai jeep trip from Munnar</h3>
+        <h3 class="hidden-keyword">Munnar to Kolukkumalai jeep cost</h3>
+        <h3 class="hidden-keyword">jeep safari Kerala Tamil Nadu border</h3>
+        
+        <!-- 🚙 SEO Paragraph -->
+        <p class="hidden-keyword">
+          🚙 <strong>How can I book a Kolukkumalai Jeep?</strong>
+          We provide reliable <strong>taxi services</strong> and <strong>off-road jeep safaris</strong>
+          across <strong>Kerala</strong> and <strong>Tamil Nadu</strong>, specializing in
+          <strong>Kolukkumalai Jeep Safari bookings</strong> — one of Munnar’s most famous adventures.
+          Many travelers ask, <strong>“How to book Kolukkumalai jeep safari online?”</strong>
+          It’s simple! You can contact us directly for <strong>Kolukkumalai jeep rides</strong>,
+          <strong>sunrise trips</strong>, or <strong>customized sightseeing packages</strong>
+          covering <strong>Munnar, Thekkady, Vagamon,</strong> and <strong>Suryanelli</strong>.
+          Our experienced local drivers and 4x4 jeeps ensure a safe, exciting
+          <strong>off-road experience</strong> through tea gardens, waterfalls, and mountain viewpoints.
+          With <strong>24/7 online booking support</strong> and affordable <strong>Kolukkumalai jeep rates</strong>,
+          we make your adventure smooth, scenic, and unforgettable.
+        </p>
+      </div>
+      <p id="about">
+        🚙 We provide <strong>taxi services</strong> and <strong>off-road jeep safaris</strong> across
+        <strong>Kerala</strong> and <strong>Tamil Nadu</strong>, including
+        <strong>Kolukkumalai Jeep Safari bookings</strong> and sightseeing trips.
+        Our 4x4 jeeps with experienced drivers ensure a safe and thrilling ride through
+        tea plantations and mountain viewpoints — making your journey truly memorable.
+      </p>
+      <h3 id="contact">Contact us</h3>
+      <div class="Box">
+        <p>(24hours services for enquiry)</p>
+        <div id="buttons">
+          <a href="https://wa.me/919497665450?text=Hi!%20I'm%20looking%20to%20book%20the%20Kolukkumalai%20Sunrise%20Jeep%20Safari%20🌄%20Please%20share%20rates%20and%20availability." class="whatsapp" target="_blank"> <i class="fab fa-whatsapp"></i> WhatsApp
+          </a>
+          <h3 id="or">or</h3>
+          <a href="tel:+91 9497665450" class="call">
+            <img id="calls" src="/phone-call (5).png">
+            call
+          </a>
+        </div>
+        <h2 id="phno">+91 9497665450</h2>
+        <h4 id="email">escapetowonderkerala@gmail.com</h4>
+        <p>(just click to know taxi,jeep,room,tent stay rent prices details and sightseening package rates and cost) <img class="money" src="/Places to Visit /MUNNAR/money-576443_640.png" alt="munnar tour package price list" /></p>
+        <h3 id="book">Book me for</h3>
+        <div class="icon-box">
+          <img src="/Places to Visit /MUNNAR/taxi-booking0.png" alt="munnar taxi booking" />
+          <button class="button">
+            TAXI</button>
+        </div>
+        <div class="icon-box">
+          <img class="jeep" src="/Places to Visit /MUNNAR/jeep-safari1.png" alt="best jeep safari in munnar" />
+          <button class="button">JEEP SAFARI</button>
+        </div>
+        <div class="icon-box">
+          <img src="/Places to Visit /MUNNAR/rooms-booking0.png" alt="room booking munnar" />
+          <button class="button">ROOMS & CAMPING</button>
+        </div>
+      </div>
+    </div>
+    
+    <div class="office">
+      <h3 id="o">OFFICE</h3>
+      <P id="op">Our office placed in (MUNNAR CHINNAKANAL) near to CLUPMAHINDRA & STERLINK suriyanlli </P>
+    </div>
+    <div class="vehickles">
+      <h3 id="v">VEHICLES</h3>
+      <p id="vp">
+        (we are providing Innova and Crysta & Travler and all types sedan like Etios,Verito,Swift for tour package and pickup & drop)
+      </p>
+      <div class="img">
+        <div class="car" id="crysta"></div>
+        <div class="car" id="innova"></div>
+        <div class="car" id="ertiga"></div>
+        <div class="car" id="travaler"></div>
+        <div class="car" id="etios"></div>
+        <div class="car" id="verito"></div>
+        <div class="car" id="swift"></div>
+      </div>
+    </div>
+  </footer>
+
+#footer{
+  margin-top:10px;
+  height:5px;
+  hr{
+    width:100vw;
+    height:5px;
+    background-color:black;
+  }
+ .bottom{
+    text-align: center;
+    font-size:20px;
+    color:black;
+   .toggle-header{
+     cursor:pointer;
+     font-weight:900;
+     font-size:35px;
+   }
+   .toggle-content {
+     cursor l:pointer;
+     display:none;
+   }
+   .hidden-keyword {
+    visibility:visible;
+     
+   }
+   h4 {
+      visibility:none;
+    }
+   .toggle-header:hover.hidden-keyword,
+   .toggle-header:focus-within.hidden-keyword,.toggle-header:hover h4,
+   .toggle-header:focus-within h4{
+     visibility:visible;
+   }    
+    #contact{
+      font-size:35px;
+      font-weight:900;
+    }
+  }
+  p{
+    font-size:25px;
+    font-weight:900;
+  }
+  #about{
+    color:;
+   
+  }
+  #buttons{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:10px;
+  }
+  .Box{
+    border-color:black;
+    border-style:solid;
+    border-width:3px;
+    border-radius:8px;
+    width:98vw;
+    margin-left:4px;
+    #book{
+      font-size:30px;
+      font-weight:900;
+    }
+    .money {
+      width:25px;
+      height:25px;
+      box-shadow: none;
+      margin-top:-30px;
+      margin-left:330px;
+    }
+    .icon-box{
+      display:flex;
+      flex-direction:row;
+      gap:30px;
+      justify-content:center;
+      img{
+        box-shadow:none;
+        height:50px;
+        width:50px;
+      }
+      .jeep{
+        width:60px;
+        margin-left:-10px;
+      }
+      .button {
+        border-radius:8px;
+        gap: 30px;
+        justify-content: start;
+        align-items: center;
+        font-size:20px;
+        width: 55vw;
+        height:50px;
+        margin-bottom:20px;
+        background-color:black;
+        text-shadow: none;
+        box-shadow: 5px 5px 5px orange;
+        font-weight:900;
+        color: white;
+      }
+    }
+
+  }
+  #or{
+    margin-top:-0.5px;
+  }
+  .whatsapp{
+    box-shadow:5px 5px 5px black;
+    height:50%;
+    display:flex;
+    flex-direction:row;
+    align-items: center;
+    padding:6px 10px;
+    font-size:25px;
+    color: #fff;
+    background-color: #25D366;
+    border:solid;
+    border-radius: 5px;
+    text-align:center;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+        }
+
+  .whatsapp:hover {
+    background-color: #128C7E;
+        }
+  
+
+  .whatsapp i {
+     margin-right: 10px; 
+        }
+  
+  .call{
+    box-shadow: 5px 5px 5px black;
+    height:50%;
+    width:23%;
+    display:flex;
+    flex-direction:row;
+    justify-content: center;
+    align-items:center;
+    gap:10px;
+    padding:6px 10px;
+    font-size:25px;
+    color: #fff;
+    background-color: #25D366;
+    border:solid;
+    border-radius: 5px;
+    text-align:center;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  #calls{
+    box-shadow:none;
+    height:25px;
+    width:25px;
+    border:none;
+    background-color:none;
+    
+  }
+    
+  #phno{
+    padding-top:px;
+    color:black;
+    font-weight:900;
+  }
+  #email{
+    display:inline-block;
+    margin-top:-20px;
+    color:black;
+    font-weight:900;
+    font-size:21px;
+  }
+
+.office{
+  text-align:center;
+  padding-top:50px;
+}
+
+#o{
+  text-align: center;
+  font-size: 40px;
+}
+
+#op{
+  font-size:25px;
+  color:black;
+}
+#v{
+  font-size:40px;
+  text-align: center;
+
+}
+#vp{
+  font-size:25px;
+  color:black;
+}
+.vehickles{
+  text-align:center;
+  padding-top:30px;
+}
+.img{
+  padding-top:20px;
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+  gap:20px;
+}
+#crysta{
+  height:200px;
+  width:380px;
+  border-radius:4px;
+  background-image:url('/vehicles/images (97).jpeg');
+  background-size:cover;
+  background-position: center;
+  background-repeat:no-repeat;
+  }
+#innova{
+  height:200px;
+  width:378px;
+  border-radius:4px;
+  background-image:url('/vehicles/images (98).jpeg');
+  background-size:cover;
+  background-position: center;
+  background-repeat:no-repeat;
+  
+}
+#ertiga {
+  height: 200px;
+  width: 378px;
+  border-radius:4px;
+  background-image: url('/vehicles/images (100).jpeg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+}
+#travaler{
+  height:250px;
+  width:380px;
+  border-radius:4px;
+  background-image:url('/vehicles/images trav.jpeg');
+  background-size:cover;
+  background-position: center;
+  background-repeat:no-repeat;
+  
+}
+#etios{
+  height: 200px;
+  width: 380px;
+  border-radius:4px;
+  background-image: url('/vehicles/images - 2024-08-23T200234.399.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+}
+#verito {
+  height: 200px;
+  width: 380px;
+  border-radius:4px;
+  background-image: url('/vehicles/images - 2024-08-23T200302.805.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+}
+#swift {
+  height: 200px;
+  width: 380px;
+  border-radius:4px;
+  background-image: url('/vehicles/dzire-exterior-right-front-three-quarter-3.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+}
+.car{
+  box-shadow:5px 5px 5px black;
+}
+
+
+}
+

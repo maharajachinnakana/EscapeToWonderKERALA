@@ -18,9 +18,10 @@ bookNowBtn.addEventListener("click", () => {
     const car = document.querySelector('input[name="cars"]:checked');
     const date = document.getElementById("date").value;
     const persons = document.getElementById("passengers").value;
+    const bookingTitle = document.title;
 
     // prepare message
-    const msg = `*New Taxi Enquiry*\n\n` +
+    const msg = `*New Taxi Enquiry*\n\n` + `📍 Page: ${bookingTitle}\n\n`+
       `🚗 Service Type: ${service ? service.value : "Not selected"}\n` +
       `📅 Date: ${date || "Not mentioned"}\n` +
       `🚘 Car Type: ${car ? car.value : "Not selected"}\n` +
@@ -66,12 +67,12 @@ closeBtn.addEventListener("click", () => {
   //click to connect pages and call page up and page down
     // 👉 Instagram
   function openInstagram() {
-    window.open("https://www.instagram.com/escape_tourisms", "_blank");
+    window.open("https://www.instagram.com/escape_tourisms?igsh=bjIxNnlnNnlxOWJ5", "_blank");
   }
   
   // 👉 Facebook
   function openFacebook() {
-    window.open("https://www.facebook.com/https://www.facebook.com/share/1CfQtRo5hG/", "_blank");
+    window.open("https://www.facebook.com/share/172xqhBmtk/", "_blank");
   }
   
   // 👉 YouTube

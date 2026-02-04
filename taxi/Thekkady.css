@@ -1,0 +1,116 @@
+
+/* ================================
+   SECTION 2 & 4 & 6 – COMMON SECTIONS
+================================ */
+.section-box{
+  border-color: transparent;
+}
+
+.section h2 {
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #222;
+}
+
+.section p {
+  max-width: 900px;
+  margin: 0 auto 20px auto;
+  text-align: center;
+  font-size: 16px;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* ================================
+   SECTION 3 – LIGHT BACKGROUND
+================================ */
+
+/* ================================
+   SECTION 2 & 4 – SERVICE LIST
+================================ */
+.section .lists {
+  list-style: none;
+  padding: 0;
+  max-width: 750px;
+  margin: auto;
+}
+
+.section .lists li {
+  background: #ffffff;
+  border: 1px solid #e3ebff;
+  padding: 14px 16px;
+  border-radius: 8px;
+  margin-bottom: 12px;
+  font-size: 16px;
+  color: #444;
+}
+
+/* ================================
+   SECTION 5 – LOCATION LIST
+================================ */
+.location-list {
+  list-style: none;
+  padding: 0;
+  max-width: 750px;
+  margin: auto;
+}
+
+.location-list li {
+  background: #ffffff;
+  border: 1px solid #dfe7ff;
+  padding: 14px 16px;
+  border-radius: 8px;
+  margin-bottom: 12px;
+  font-size: 16px;
+  color: #333;
+}
+
+/* ================================
+   SECTION 6 – WHY CHOOSE US
+================================ */
+.offer-section {
+  padding: 40px 20px;
+  background: #f7faff;
+}
+
+.offer-section h2 {
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #222;
+}
+
+.offer-section ul {
+  list-style: none;
+  padding: 0;
+  max-width: 750px;
+  margin: auto;
+}
+
+.offer-section ul li {
+  background: #ffffff;
+  border: 1px solid #e3ebff;
+  padding: 14px 16px;
+  border-radius: 8px;
+  margin-bottom: 12px;
+  font-size: 16px;
+  font-weight: 500;
+  text-align: center;
+}
+
+/* ================================
+   MOBILE RESPONSIVE
+================================ */
+@media (max-width: 600px) {
+  .section h2,
+  .offer-section h2 {
+    font-size: 24px;
+  }
+
+  .section p,
+  .section .list li,
+  .location-list li,
+  .offer-section ul li {
+    font-size: 15px;
+  }
